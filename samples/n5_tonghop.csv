@@ -1,0 +1,557 @@
+kanji,kana,meaning_vi
+私,わたし,tôi
+,あなた,bạn/anh/chị (ngôi thứ hai)
+彼,かれ,anh ấy
+誰,だれ,ai
+人,ひと,người
+男,おとこ,đàn ông/nam
+女,おんな,phụ nữ/nữ
+男の子,おとこのこ,bé trai
+女の子,おんなのこ,bé gái
+子供,こども,trẻ con
+大人,おとな,người lớn
+友達,ともだち,bạn bè
+先生,せんせい,giáo viên/thầy cô
+学生,がくせい,học sinh/sinh viên
+留学生,りゅうがくせい,du học sinh
+医者,いしゃ,bác sĩ
+警官,けいかん,cảnh sát
+家族,かぞく,gia đình
+父,ちち,bố (của mình)
+母,はは,mẹ (của mình)
+お父さん,おとうさん,bố (người khác/gọi bố)
+お母さん,おかあさん,mẹ (người khác/gọi mẹ)
+兄,あに,anh trai (của mình)
+姉,あね,chị gái (của mình)
+弟,おとうと,em trai
+妹,いもうと,em gái
+お兄さん,おにいさん,anh trai (người khác/gọi anh)
+お姉さん,おねえさん,chị gái (người khác/gọi chị)
+兄弟,きょうだい,anh chị em
+両親,りょうしん,bố mẹ
+,おじいさん,ông
+,おばあさん,bà
+,おじさん,chú/bác (nam)
+,おばさん,cô/dì (nữ)
+奥さん,おくさん,vợ (người khác)
+主人,しゅじん,chồng (của mình)
+皆さん,みなさん,mọi người
+自分,じぶん,bản thân
+名前,なまえ,tên
+外国人,がいこくじん,người nước ngoài
+外国,がいこく,nước ngoài
+国,くに,đất nước
+日本,にほん,Nhật Bản
+日本語,にほんご,tiếng Nhật
+英語,えいご,tiếng Anh
+言葉,ことば,từ ngữ/ngôn ngữ
+体,からだ,cơ thể
+頭,あたま,đầu
+顔,かお,mặt
+目,め,mắt
+耳,みみ,tai
+鼻,はな,mũi
+口,くち,miệng
+歯,は,răng
+手,て,tay
+足,あし,chân
+お腹,おなか,bụng
+背,せ,chiều cao/lưng
+声,こえ,giọng nói
+病気,びょうき,bệnh
+薬,くすり,thuốc
+風邪,かぜ,cảm cúm
+今,いま,bây giờ
+今日,きょう,hôm nay
+明日,あした,ngày mai
+昨日,きのう,hôm qua
+一昨日,おととい,hôm kia
+明後日,あさって,ngày kia
+毎日,まいにち,mỗi ngày
+毎朝,まいあさ,mỗi sáng
+毎晩,まいばん,mỗi tối
+毎週,まいしゅう,mỗi tuần
+毎月,まいつき,mỗi tháng
+毎年,まいとし,mỗi năm
+朝,あさ,buổi sáng
+昼,ひる,buổi trưa
+晩,ばん,buổi tối
+夜,よる,ban đêm
+夕方,ゆうがた,chiều tối
+午前,ごぜん,buổi sáng (AM)
+午後,ごご,buổi chiều (PM)
+今朝,けさ,sáng nay
+今晩,こんばん,tối nay
+今週,こんしゅう,tuần này
+来週,らいしゅう,tuần sau
+先週,せんしゅう,tuần trước
+今月,こんげつ,tháng này
+来月,らいげつ,tháng sau
+先月,せんげつ,tháng trước
+今年,ことし,năm nay
+来年,らいねん,năm sau
+去年,きょねん,năm ngoái
+週,しゅう,tuần
+年,とし,năm/tuổi
+時間,じかん,thời gian
+時,とき,khi/lúc
+時計,とけい,đồng hồ
+半,はん,rưỡi/một nửa
+前,まえ,trước/phía trước
+後,あと,sau/sau khi
+誕生日,たんじょうび,sinh nhật
+休み,やすみ,ngày nghỉ
+夏休み,なつやすみ,kỳ nghỉ hè
+春,はる,mùa xuân
+夏,なつ,mùa hè
+秋,あき,mùa thu
+冬,ふゆ,mùa đông
+月曜日,げつようび,thứ Hai
+火曜日,かようび,thứ Ba
+水曜日,すいようび,thứ Tư
+木曜日,もくようび,thứ Năm
+金曜日,きんようび,thứ Sáu
+土曜日,どようび,thứ Bảy
+日曜日,にちようび,Chủ nhật
+何曜日,なんようび,thứ mấy
+一,いち,một (1)
+二,に,hai (2)
+三,さん,ba (3)
+四,よん,bốn (4)
+五,ご,năm (5)
+六,ろく,sáu (6)
+七,なな,bảy (7)
+八,はち,tám (8)
+九,きゅう,chín (9)
+十,じゅう,mười (10)
+百,ひゃく,một trăm (100)
+千,せん,một nghìn (1000)
+万,まん,mười nghìn (10000)
+一つ,ひとつ,một cái
+二つ,ふたつ,hai cái
+三つ,みっつ,ba cái
+四つ,よっつ,bốn cái
+五つ,いつつ,năm cái
+六つ,むっつ,sáu cái
+七つ,ななつ,bảy cái
+八つ,やっつ,tám cái
+九つ,ここのつ,chín cái
+一人,ひとり,một người
+二人,ふたり,hai người
+一日,ついたち,ngày mùng 1
+二十日,はつか,ngày 20
+,いくつ,mấy cái/mấy tuổi
+,いくら,bao nhiêu tiền
+全部,ぜんぶ,toàn bộ/tất cả
+家,いえ,nhà
+部屋,へや,phòng
+学校,がっこう,trường học
+大学,だいがく,đại học
+教室,きょうしつ,lớp học/phòng học
+会社,かいしゃ,công ty
+銀行,ぎんこう,ngân hàng
+郵便局,ゆうびんきょく,bưu điện
+病院,びょういん,bệnh viện
+駅,えき,nhà ga
+図書館,としょかん,thư viện
+大使館,たいしかん,đại sứ quán
+公園,こうえん,công viên
+店,みせ,cửa hàng
+,デパート,cửa hàng bách hóa
+,レストラン,nhà hàng
+喫茶店,きっさてん,quán cà phê
+映画館,えいがかん,rạp chiếu phim
+,ホテル,khách sạn
+,トイレ,nhà vệ sinh
+,アパート,căn hộ
+台所,だいどころ,nhà bếp
+玄関,げんかん,lối vào nhà/sảnh
+庭,にわ,vườn
+道,みち,đường
+交差点,こうさてん,ngã tư
+橋,はし,cây cầu
+川,かわ,sông
+山,やま,núi
+海,うみ,biển
+池,いけ,ao
+町,まち,thị trấn/khu phố
+所,ところ,nơi/chỗ
+近く,ちかく,gần đây/vùng lân cận
+隣,となり,bên cạnh
+上,うえ,trên
+下,した,dưới
+中,なか,trong
+外,そと,ngoài
+右,みぎ,bên phải
+左,ひだり,bên trái
+東,ひがし,phía đông
+西,にし,phía tây
+南,みなみ,phía nam
+北,きた,phía bắc
+横,よこ,bên hông/chiều ngang
+後ろ,うしろ,phía sau
+向こう,むこう,phía bên kia
+,ここ,ở đây
+,そこ,ở đó
+,あそこ,ở đằng kia
+,どこ,ở đâu
+,こちら,phía này (lịch sự)
+,どちら,phía nào/cái nào (lịch sự)
+本,ほん,sách
+辞書,じしょ,từ điển
+新聞,しんぶん,báo
+雑誌,ざっし,tạp chí
+手紙,てがみ,thư
+葉書,はがき,bưu thiếp
+切手,きって,tem
+封筒,ふうとう,phong bì
+紙,かみ,giấy
+,ノート,vở
+鉛筆,えんぴつ,bút chì
+,ペン,bút
+,ボールペン,bút bi
+机,つくえ,bàn học
+椅子,いす,ghế
+,テーブル,cái bàn
+,ベッド,giường
+窓,まど,cửa sổ
+,ドア,cửa ra vào
+電気,でんき,điện/đèn điện
+電話,でんわ,điện thoại
+,テレビ,tivi
+,ラジオ,radio
+,カメラ,máy ảnh
+写真,しゃしん,ảnh
+,コンピューター,máy tính
+冷蔵庫,れいぞうこ,tủ lạnh
+,ストーブ,lò sưởi
+,シャワー,vòi sen
+,エレベーター,thang máy
+鍵,かぎ,chìa khóa
+傘,かさ,ô/dù
+鞄,かばん,cặp/túi xách
+財布,さいふ,ví
+眼鏡,めがね,kính mắt
+帽子,ぼうし,mũ
+服,ふく,quần áo
+洋服,ようふく,quần áo kiểu Âu
+,シャツ,áo sơ mi
+,セーター,áo len
+,ズボン,quần dài
+,スカート,váy
+靴,くつ,giày
+靴下,くつした,tất
+,スリッパ,dép đi trong nhà
+,コート,áo măng tô/áo khoác dài
+上着,うわぎ,áo khoác ngoài
+,ネクタイ,cà vạt
+,ハンカチ,khăn tay
+,ポケット,túi (quần áo)
+,ボタン,nút/cúc áo
+物,もの,đồ vật
+荷物,にもつ,hành lý
+お金,おかね,tiền
+切符,きっぷ,vé
+地図,ちず,bản đồ
+箱,はこ,hộp
+色,いろ,màu sắc
+,ギター,đàn ghi-ta
+歌,うた,bài hát
+音楽,おんがく,âm nhạc
+映画,えいが,phim
+絵,え,tranh
+,ニュース,tin tức
+,ページ,trang
+,クラス,lớp
+,テープ,băng dính/băng cát-sét
+,メートル,mét
+,キロ,ki-lô (kg/km)
+,グラム,gam
+宿題,しゅくだい,bài tập về nhà
+問題,もんだい,vấn đề/đề bài
+質問,しつもん,câu hỏi
+試験,しけん,kỳ thi
+,テスト,bài kiểm tra
+授業,じゅぎょう,giờ học/tiết học
+練習,れんしゅう,luyện tập
+勉強,べんきょう,việc học/học tập
+意味,いみ,ý nghĩa
+仕事,しごと,công việc
+旅行,りょこう,du lịch
+散歩,さんぽ,đi dạo
+買い物,かいもの,mua sắm
+料理,りょうり,món ăn/nấu ăn
+洗濯,せんたく,giặt giũ
+掃除,そうじ,dọn dẹp
+結婚,けっこん,kết hôn
+,スポーツ,thể thao
+,プール,bể bơi
+,パーティー,bữa tiệc
+話,はなし,câu chuyện
+天気,てんき,thời tiết
+雨,あめ,mưa
+雪,ゆき,tuyết
+風,かぜ,gió
+空,そら,bầu trời
+曇り,くもり,trời nhiều mây
+晴れ,はれ,trời nắng/trời quang
+動物,どうぶつ,động vật
+犬,いぬ,chó
+猫,ねこ,mèo
+鳥,とり,chim
+魚,さかな,cá
+木,き,cây
+花,はな,hoa
+車,くるま,xe ô tô
+自転車,じてんしゃ,xe đạp
+電車,でんしゃ,tàu điện
+地下鉄,ちかてつ,tàu điện ngầm
+飛行機,ひこうき,máy bay
+,バス,xe buýt
+,タクシー,taxi
+ご飯,ごはん,cơm/bữa ăn
+朝ご飯,あさごはん,bữa sáng
+昼ご飯,ひるごはん,bữa trưa
+晩ご飯,ばんごはん,bữa tối
+食べ物,たべもの,đồ ăn
+飲み物,のみもの,đồ uống
+水,みず,nước
+お茶,おちゃ,trà
+,コーヒー,cà phê
+牛乳,ぎゅうにゅう,sữa bò
+お酒,おさけ,rượu
+,ビール,bia
+,ジュース,nước ép
+肉,にく,thịt
+豚肉,ぶたにく,thịt lợn
+鶏肉,とりにく,thịt gà
+卵,たまご,trứng
+野菜,やさい,rau
+果物,くだもの,trái cây
+,パン,bánh mì
+塩,しお,muối
+砂糖,さとう,đường (ăn)
+お菓子,おかし,bánh kẹo
+弁当,べんとう,cơm hộp
+,カレー,cà ri
+箸,はし,đũa
+,スプーン,thìa
+,ナイフ,dao
+,フォーク,dĩa/nĩa
+,コップ,cốc
+茶碗,ちゃわん,bát
+皿,さら,đĩa
+大きい,おおきい,to/lớn
+小さい,ちいさい,nhỏ
+新しい,あたらしい,mới
+古い,ふるい,cũ
+高い,たかい,cao/đắt
+安い,やすい,rẻ
+低い,ひくい,thấp
+長い,ながい,dài
+短い,みじかい,ngắn
+広い,ひろい,rộng
+狭い,せまい,hẹp/chật
+重い,おもい,nặng
+軽い,かるい,nhẹ
+暑い,あつい,nóng (thời tiết)
+寒い,さむい,lạnh (thời tiết)
+熱い,あつい,nóng (đồ vật)
+冷たい,つめたい,lạnh (đồ vật)
+暖かい,あたたかい,ấm áp
+涼しい,すずしい,mát mẻ
+,いい,tốt
+悪い,わるい,xấu/tồi
+面白い,おもしろい,thú vị
+,つまらない,nhàm chán
+楽しい,たのしい,vui vẻ
+難しい,むずかしい,khó
+易しい,やさしい,dễ
+忙しい,いそがしい,bận rộn
+美味しい,おいしい,ngon
+,まずい,dở (đồ ăn)
+甘い,あまい,ngọt
+辛い,からい,cay
+痛い,いたい,đau
+強い,つよい,mạnh
+弱い,よわい,yếu
+多い,おおい,nhiều (tính từ)
+少ない,すくない,ít
+早い,はやい,sớm
+速い,はやい,nhanh
+遅い,おそい,muộn/chậm
+近い,ちかい,gần
+遠い,とおい,xa
+明るい,あかるい,sáng sủa
+暗い,くらい,tối tăm
+白い,しろい,trắng
+黒い,くろい,đen
+赤い,あかい,đỏ
+青い,あおい,xanh dương
+黄色い,きいろい,vàng
+若い,わかい,trẻ
+可愛い,かわいい,dễ thương
+汚い,きたない,bẩn
+太い,ふとい,mập/thô (to bề ngang)
+細い,ほそい,mảnh/gầy
+薄い,うすい,mỏng/nhạt
+丸い,まるい,tròn
+欲しい,ほしい,muốn có
+危ない,あぶない,nguy hiểm
+,うるさい,ồn ào
+好き,すき,thích
+嫌い,きらい,ghét
+上手,じょうず,giỏi
+下手,へた,kém/dở
+元気,げんき,khỏe mạnh
+静か,しずか,yên tĩnh
+有名,ゆうめい,nổi tiếng
+親切,しんせつ,tốt bụng
+便利,べんり,tiện lợi
+綺麗,きれい,đẹp/sạch
+暇,ひま,rảnh rỗi
+賑やか,にぎやか,náo nhiệt
+大丈夫,だいじょうぶ,không sao
+大切,たいせつ,quan trọng
+大好き,だいすき,rất thích
+丈夫,じょうぶ,bền/chắc khỏe
+色々,いろいろ,nhiều loại
+同じ,おなじ,giống nhau
+行く,いく,đi
+来る,くる,đến
+帰る,かえる,về
+食べる,たべる,ăn
+飲む,のむ,uống
+見る,みる,xem/nhìn
+聞く,きく,nghe/hỏi
+読む,よむ,đọc
+書く,かく,viết
+話す,はなす,nói chuyện
+言う,いう,nói
+買う,かう,mua
+売る,うる,bán
+,する,làm
+起きる,おきる,thức dậy
+寝る,ねる,ngủ
+働く,はたらく,làm việc/lao động
+勤める,つとめる,làm việc tại (công ty)
+休む,やすむ,nghỉ ngơi
+会う,あう,gặp
+待つ,まつ,đợi
+持つ,もつ,cầm/mang
+使う,つかう,sử dụng
+作る,つくる,chế tạo/làm ra
+分かる,わかる,hiểu
+知る,しる,biết
+教える,おしえる,dạy/chỉ bảo
+習う,ならう,học (từ ai đó)
+覚える,おぼえる,ghi nhớ
+忘れる,わすれる,quên
+開ける,あける,mở
+閉める,しめる,đóng
+入る,はいる,vào
+出る,でる,ra
+出かける,でかける,ra ngoài
+始まる,はじまる,bắt đầu
+終わる,おわる,kết thúc
+歩く,あるく,đi bộ
+走る,はしる,chạy
+泳ぐ,およぐ,bơi
+乗る,のる,lên xe/đi (xe)
+降りる,おりる,xuống xe
+立つ,たつ,đứng
+座る,すわる,ngồi
+住む,すむ,sống/cư trú
+着る,きる,mặc (áo)
+脱ぐ,ぬぐ,cởi
+履く,はく,mang (giày/quần)
+被る,かぶる,đội (mũ)
+洗う,あらう,rửa
+浴びる,あびる,tắm (vòi sen)
+撮る,とる,chụp (ảnh)
+取る,とる,lấy
+貸す,かす,cho mượn
+借りる,かりる,mượn
+返す,かえす,trả lại
+,あげる,cho/tặng
+,もらう,nhận
+呼ぶ,よぶ,gọi
+答える,こたえる,trả lời
+押す,おす,ấn/đẩy
+引く,ひく,kéo
+弾く,ひく,chơi (đàn)
+歌う,うたう,hát
+遊ぶ,あそぶ,chơi
+吸う,すう,hút
+死ぬ,しぬ,chết
+生まれる,うまれる,được sinh ra
+困る,こまる,gặp khó khăn
+頼む,たのむ,nhờ/gọi (món)
+置く,おく,đặt/để
+並ぶ,ならぶ,xếp hàng
+渡る,わたる,băng qua
+曲がる,まがる,rẽ
+止まる,とまる,dừng lại
+疲れる,つかれる,mệt
+降る,ふる,rơi (mưa/tuyết)
+咲く,さく,nở (hoa)
+鳴く,なく,kêu (động vật)
+掛ける,かける,gọi (điện)/treo
+消す,けす,tắt/xóa
+点ける,つける,bật
+飛ぶ,とぶ,bay
+切る,きる,cắt
+登る,のぼる,leo
+入れる,いれる,cho vào
+出す,だす,lấy ra/gửi
+見せる,みせる,cho xem
+磨く,みがく,đánh (răng)/đánh bóng
+,ある,có (đồ vật)
+,いる,có/ở (người/động vật)
+少し,すこし,một chút
+,ちょっと,hơi/một lát
+,とても,rất
+,たくさん,nhiều (số lượng lớn)
+,もっと,hơn nữa
+,まだ,vẫn/chưa
+,もう,đã/rồi
+,すぐ,ngay lập tức
+,よく,thường/hay
+時々,ときどき,thỉnh thoảng
+,いつも,luôn luôn
+,たいてい,thường thì/đại khái
+,あまり,không... lắm
+全然,ぜんぜん,hoàn toàn không
+,ゆっくり,chậm rãi/thong thả
+,だんだん,dần dần
+一緒に,いっしょに,cùng nhau
+一番,いちばん,nhất/số một
+,また,lại/lần nữa
+初めて,はじめて,lần đầu
+,どうぞ,xin mời
+,どうも,cảm ơn (ngắn)/rất
+,ありがとう,cảm ơn
+,すみません,xin lỗi/xin phép
+,ごめんなさい,xin lỗi (thân mật)
+,おはようございます,chào buổi sáng
+,こんにちは,xin chào
+,こんばんは,chào buổi tối
+,さようなら,tạm biệt
+,おやすみなさい,chúc ngủ ngon
+,いただきます,xin phép ăn (trước bữa)
+,ごちそうさまでした,cảm ơn vì bữa ăn
+,はい,vâng/có
+,いいえ,không
+,いつ,khi nào
+何,なに,cái gì
+,どう,như thế nào
+,どうして,tại sao
+,どれ,cái nào
+,これ,cái này
+,それ,cái đó
+,あれ,cái kia
+,この,này (+ danh từ)
+,どんな,loại gì/như thế nào (+ danh từ)
+,そして,và/sau đó
+,でも,nhưng
+,じゃあ,vậy thì

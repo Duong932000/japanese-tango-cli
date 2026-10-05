@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.tmp
+
+# Tiến độ học là dữ liệu cá nhân. Bỏ dòng dưới nếu muốn đồng bộ tiến độ qua git.
+progress.json
