@@ -1,1 +1,524 @@
-lesson,kanji,kana,meaning_vi
+lesson,kanji,hanviet,meaning_vi
+1,一,NHẤT,một
+1,二,NHỊ,hai
+1,三,TAM,ba
+1,四,TỨ,bốn
+1,五,NGŨ,năm
+1,六,LỤC,sáu
+1,七,THẤT,bảy
+1,八,BÁT,tám
+1,九,CỬU,chín
+1,十,THẬP,mười
+1,千,THIÊN,1000
+1,干,CAN,khô
+1,平,BÌNH,hòa bình
+1,午,NGỌ,giữa trưa
+1,年,NIÊN,năm
+1,牛,NGƯU,con bò
+1,生,SINH,học sinh
+1,半,BÁN,phân nửa
+1,工,CÔNG,công trường
+1,土,THỔ,đất
+1,士,SĨ,binh sĩ
+1,木,MỘC,cây
+1,米,MỄ,lúa gạo
+1,未,VỊ,chưa đến
+1,末,MẠT,cuối
+1,人,NHÂN,người
+1,入,NHẬP,vào
+1,大,ĐẠI,to/lớn
+1,天,THIÊN,trời
+1,夫,PHU,chồng
+1,失,THẤT,thất bại
+1,丈,TRƯỢNG,trượng phu
+1,王,VƯƠNG,vua
+1,主,CHỦ,ông chủ
+1,水,THỦY,nước
+1,火,HỎA,lửa
+1,山,SƠN,núi
+1,出,XUẤT,đi ra
+1,月,NGUYỆT,trăng
+1,用,DỤNG,sử dụng
+1,内,NỘI,bên trong
+1,肉,NHỤC,thịt
+1,不,BẤT,không
+1,下,HẠ,dưới
+1,上,THƯỢNG,trên
+1,止,CHỈ,dừng
+1,正,CHÍNH,chính xác
+1,刀,ĐAO,con dao
+1,力,LỰC,sức lực
+1,万,VẠN,10000
+1,方,PHƯƠNG,phương hướng
+1,分,PHÂN,phân chia
+1,口,KHẨU,miệng
+1,古,CỔ,cũ
+1,合,HỢP,hòa hợp
+1,中,TRUNG,ở giữa/trung gian
+1,日,NHẬT,ngày
+1,白,BẠCH,trắng
+1,百,BÁCH,100
+1,目,MỤC,mắt
+1,自,TỰ,tự mình
+1,貝,BỐI,con sò
+1,具,CỤ,dụng cụ
+1,車,XA,xe hơi
+1,重,TRỌNG,nặng
+1,田,ĐIỀN,ruộng
+1,由,DO,tự do
+1,男,NAM,con trai
+1,女,NỮ,con gái
+1,子,TỬ,con
+1,小,TIỂU,nhỏ
+1,少,THIỂU,ít
+1,多,ĐA,nhiều
+1,川,XUYÊN,sông
+1,寺,TỰ,chùa
+1,亡,VONG,chết
+1,西,TÂY,phía Tây
+1,門,MÔN,cổng
+1,金,KIM,vàng
+1,己,KỶ,bản thân
+1,心,TÂM,tim
+1,才,TÀI,tuổi/tài năng
+1,丁,ĐINH,can thứ 4
+1,可,KHẢ,khả năng
+1,欠,KHIẾM,thiếu
+1,反,PHẢN,phản đối
+1,手,THỦ,tay
+1,氏,THỊ,họ
+1,立,LẬP,đứng
+1,豆,ĐẬU,hạt đậu
+1,羊,DƯƠNG,con cừu
+1,羽,VŨ,cánh
+1,耳,NHĨ,tai
+1,言,NGÔN,lời nói
+1,舌,THIỆT,lưỡi
+1,辛,TÂN,cay
+1,雨,VŨ,mưa
+1,央,ƯƠNG,trung ương
+1,食,THỰC,ăn
+1,馬,MÃ,con ngựa
+1,交,GIAO,giao thông
+1,京,KINH,kinh đô
+1,免,MIỄN,miễn giảm
+1,赤,XÍCH,màu đỏ
+1,走,TẨU,chạy
+1,世,THẾ,thế giới
+1,両,LƯỠNG,cả hai
+1,乗,THỪA,lên xe
+1,乳,NHŨ,sữa
+1,事,SỰ,sự việc
+1,今,KIM,bây giờ
+1,介,GIỚI,giới thiệu
+1,会,HỘI,gặp gỡ
+1,亻,NHÂN ĐỨNG,bộ thủ (người)
+1,仕,SĨ,công việc
+1,付,PHÓ,gắn vào
+1,休,HƯU,nghỉ ngơi
+1,伝,TRUYỀN,truyền đạt
+1,何,HÀ,cái gì
+1,作,TÁC,tác giả
+1,体,THỂ,cơ thể
+1,住,TRÚ,cư trú
+1,低,ĐÊ,thấp
+1,価,GIÁ,giá trị
+1,使,SỬ,sử dụng
+1,信,TÍN,tín hiệu
+1,便,TIỆN,tiện lợi
+1,借,TÁ,vay/mượn
+1,働,ĐỘNG,lao động
+1,儿,NHÂN ĐI,bộ thủ (người)
+1,元,NGUYÊN,nguồn gốc
+1,兄,HUYNH,anh trai
+1,先,TIÊN,trước
+1,全,TOÀN,toàn bộ
+1,公,CÔNG,công viên
+1,円,VIÊN,đơn vị tiền Nhật (yên)
+2,写,TẢ,miêu tả
+2,冷,LÃNH,lạnh
+2,出,XUẤT,đưa ra
+2,刀,ĐAO,con dao
+2,切,THIẾT,cắt
+2,分,PHÂN,phân chia
+2,刂,BỘ ĐAO,bộ thủ (dao)
+2,列,LIỆT,hàng lối
+2,利,LỢI,tiện lợi
+2,前,TIỀN,phía trước
+2,力,LỰC,sức lực
+2,勉,MIỄN,miễn cưỡng (việc học)
+2,動,ĐỘNG,vận động
+2,務,VỤ,sự vụ
+2,匕,BỘ TRỦY,bộ thủ (cái thìa)
+2,化,HÓA,hóa học
+2,北,BẮC,phía Bắc
+2,区,KHU,khu vực
+2,医,Y,y học
+2,十,THẬP,mười
+2,千,THIÊN,một ngàn
+2,午,NGỌ,giữa trưa
+2,半,BÁN,một nửa
+2,卒,TỐT,tốt nghiệp
+2,南,NAM,phía Nam
+2,去,KHỨ,quá khứ
+2,又,BỘ HỰU,bộ thủ (lại/tay phải)
+2,友,HỮU,bạn bè
+2,取,THỦ,lấy
+2,受,THỤ,nhận
+2,口,KHẨU,miệng
+2,古,CỔ,cũ
+2,号,HIỆU,số hiệu
+2,台,ĐÀI,cái bục
+2,右,HỮU,bên phải
+2,吸,HẤP,hút/hít
+2,合,HỢP,hòa hợp
+2,同,ĐỒNG,giống nhau
+2,名,DANH,danh tiếng
+2,呼,HÔ,gọi
+2,員,VIÊN,nhân viên
+2,問,VẤN,vấn đề
+2,喫,KHIẾT,ăn uống
+2,四,TỨ,bốn
+2,回,HỒI,lần
+2,図,ĐỒ,bản đồ
+2,国,QUỐC,đất nước
+2,園,VIÊN,công viên
+2,土,THỔ,đất
+2,地,ĐỊA,địa lý
+3,堂,ĐƯỜNG,nhà lớn
+3,場,TRƯỜNG,công trường
+3,士,SĨ,binh sĩ
+3,声,THANH,âm thanh
+3,売,MẠI,bán
+3,夂,BỘ TRUY,bộ thủ (đến sau)
+3,冬,ĐÔNG,mùa đông
+3,変,BIẾN,biến đổi
+3,夏,HẠ,mùa hè
+3,夕,TỊCH,buổi tối
+3,外,NGOẠI,bên ngoài
+3,多,ĐA,nhiều
+3,夜,DẠ,buổi tối
+3,大,ĐẠI,to/lớn
+3,太,THÁI,mập
+3,天,THIÊN,trời
+3,夫,PHU,chồng
+3,失,THẤT,thất bại
+3,女,NỮ,con gái
+3,好,HẢO,thích
+3,妻,THÊ,vợ
+3,姉,TỶ,chị
+3,妹,MUỘI,em gái
+3,始,THỦY,bắt đầu
+3,婦,PHỤ,phụ nữ
+3,婚,HÔN,kết hôn
+3,子,TỬ,con
+3,字,TỰ,chữ
+3,学,HỌC,học sinh
+3,宀,BỘ MIÊN,bộ thủ (mái nhà)
+3,安,AN,an toàn
+3,実,THỰC,thực tế
+3,室,THẤT,phòng
+3,家,GIA,gia đình
+3,宿,TÚC,tá túc
+3,富,PHÚ,giàu có
+3,寒,HÀN,lạnh (thời tiết)
+3,寝,TẨM,ngủ
+3,寸,BỘ THỐN,bộ thủ (tấc)
+3,寺,TỰ,chùa
+3,将,TƯƠNG,tương lai
+3,小,TIỂU,nhỏ
+3,少,THIỂU,ít
+3,尸,BỘ THI,bộ thủ (thây người)
+3,屋,ỐC,phòng ốc
+3,山,SƠN,núi
+3,川,XUYÊN,sông
+3,工,CÔNG,công trường
+3,左,TẢ,bên trái
+3,己,KỶ,bản thân
+4,巾,CÂN,bộ thủ (khăn)
+4,市,THỊ,thị trường
+4,布,BỐ,vải
+4,師,SƯ,giáo sư
+4,帰,QUY,trở về
+4,席,TỊCH,chỗ ngồi
+4,帳,TRƯỚNG,thủ trướng (sổ tay)
+4,年,NIÊN,năm
+4,广,BỘ NGHIỄM,bộ thủ (mái hiên)
+4,広,QUẢNG,rộng
+4,店,ĐIẾM,cửa hàng
+4,度,ĐỘ,lần
+4,座,TỌA,ngồi
+4,庭,ĐÌNH,cái sân
+4,廴,BỘ DẪN,bộ thủ (bước dài)
+4,建,KIẾN,kiến trúc
+4,式,THỨC,hình thức
+4,弓,BỘ CUNG,bộ thủ (cây cung)
+4,引,DẪN,kéo
+4,弟,ĐỆ,em trai
+4,弱,NHƯỢC,yếu
+4,強,CƯỜNG,mạnh
+4,張,TRƯƠNG,căng ra
+4,彡,BỘ SAM,bộ thủ (lông tóc)
+4,形,HÌNH,hình dáng
+4,彳,BỘ SÁCH,bộ thủ (bước chân)
+4,彼,BỈ,anh ta
+4,後,HẬU,phía sau
+4,待,ĐÃI,chiêu đãi
+4,復,PHỤC,phục hồi
+4,艹,BỘ THẢO,bộ thủ (cỏ)
+4,花,HOA,bông hoa
+4,英,ANH,tiếng Anh
+4,苦,KHỔ,cực khổ
+4,茶,TRÀ,trà
+4,荷,HÀ,hành lí
+4,菓,QUẢ,bánh kẹo
+4,薬,DƯỢC,thuốc
+4,辶,BỘ SƯỚC,bộ thủ (bước đi)
+4,近,CẬN,gần
+4,返,PHẢN,phản hồi
+4,送,TỐNG,gửi/tiễn
+4,通,THÔNG,giao thông
+4,速,TỐC,nhanh
+4,週,CHU,tuần
+4,遊,DU,vui chơi
+4,運,VẬN,vận chuyển
+4,道,ĐẠO,con đường
+4,遅,TRÌ,chậm trễ
+4,～阝,BỘ ẤP,bộ thủ (vùng đất) đứng bên phải chữ
+5,部,BỘ,bộ phận
+5,都,ĐÔ,đô thị
+5,阝～,BỘ PHỤ,bộ thủ (gò đất) đứng bên trái chữ
+5,院,VIỆN,bệnh viện
+5,忄,BỘ TÂM,bộ thủ (tim)
+5,心,TÂM,tâm hồn
+5,忙,MANG,bận rộn
+5,忘,VONG,quên
+5,念,NIỆM,kỉ niệm
+5,性,TÍNH,tính cách
+5,思,TƯ,suy tư
+5,恋,LUYẾN,yêu
+5,悪,ÁC,xấu xa
+5,意,Ý,ý chí
+5,戸,BỘ HỘ,bộ thủ (cửa)
+5,戻,LỆ,quay lại
+5,所,SỞ,nơi chốn
+5,手,THỦ,tay
+5,才,TÀI,tuổi/tài năng
+5,扌,BỘ THỦ,bộ thủ (tay)
+5,払,PHẤT,trả tiền
+5,押,ÁP,đè/ấn
+5,持,TRÌ,cầm/nắm
+5,拾,THẬP,thu nhặt
+5,捨,XẢ,vứt bỏ
+5,授,THỤ,giờ học
+5,攵,BỘ PHỘC,bộ thủ (đánh nhẹ)
+5,故,CỐ,sự cố
+5,教,GIÁO,giáo dục
+5,散,TẢN,tản bộ
+5,数,SỐ,số đếm
+5,文,VĂN,văn học
+5,料,LIỆU,vật liệu
+5,斤,BỘ CÂN,bộ thủ (cái rìu)
+5,新,TÂN,mới
+5,方,PHƯƠNG,phương hướng
+5,旅,LỮ,du lịch
+5,族,TỘC,dòng tộc
+5,日,NHẬT,ngày
+5,早,TẢO,sớm
+5,易,DỊCH,dễ
+5,明,MINH,sáng
+5,映,ÁNH,ánh họa (phim)
+5,昨,TẠC,đã qua
+5,春,XUÂN,mùa xuân
+5,昼,TRÚ,buổi trưa
+5,時,THỜI,thời gian
+5,暑,THỬ,nóng (thời tiết)
+5,晩,VÃN,buổi tối
+5,暗,ÁM,tối/u ám
+6,曜,DIỆU,ngày trong tuần
+6,書,THƯ,viết
+6,月,NGUYỆT,trăng
+6,有,HỮU,sở hữu
+6,服,PHỤC,quần áo
+6,朝,TRIỀU,buổi sáng
+6,木,MỘC,cái cây
+6,本,BẢN,cuốn sách
+6,末,MẠT,cuối cùng
+6,机,KỶ,cái bàn
+6,束,THÚC,bó (hoa)
+6,村,THÔN,thôn làng
+6,来,LAI,đến
+6,果,QUẢ,kết quả
+6,東,ĐÔNG,phía Đông
+6,林,LÂM,rừng
+6,桜,ANH,hoa anh đào
+6,校,HIỆU,hiệu trưởng
+6,森,SÂM,rừng rậm
+6,楽,LẠC,vui
+6,業,NGHIỆP,sự nghiệp
+6,欲,DỤC,muốn có
+6,歌,CA,ca hát
+6,止,CHỈ,dừng lại
+6,正,CHÍNH,chính xác
+6,歩,BỘ,đi bộ
+6,歹,BỘ NGẠT,bộ thủ (xương tàn)
+6,死,TỬ,chết
+6,母,MẪU,mẹ
+6,毎,MỖI,mỗi (ngày...)
+6,毛,MAO,lông
+6,氏,THỊ,họ
+6,気,KHÍ,không khí
+6,水,THỦY,nước
+6,氵,3 CHẤM THỦY,bộ thủ (nước)
+6,池,TRÌ,cái ao
+6,泳,VỊNH,bơi
+6,泣,KHẤP,khóc
+6,注,CHÚ,chú ý
+6,法,PHÁP,phương pháp
+6,海,HẢI,biển
+6,活,HOẠT,sinh hoạt
+6,洗,TẨY,rửa
+6,消,TIÊU,xóa/tắt
+6,浴,DỤC,tắm
+6,済,TẾ,kinh tế
+6,涼,LƯƠNG,mát mẻ
+6,温,ÔN,ấm áp
+6,港,CẢNG,bến cảng
+6,漢,HÁN,hán tự
+7,火,HỎA,lửa
+7,灬,4 CHẤM HỎA,bộ thủ (lửa)
+7,点,ĐIỂM,điểm số
+7,父,PHỤ,cha
+7,牛,NGƯU,con bò
+7,牜,BỘ NGƯU,bộ thủ (con bò)
+7,物,VẬT,đồ vật
+7,犬,KHUYỂN,con chó
+7,玉,NGỌC,viên ngọc
+7,理,LÝ,lý do
+7,甘,CAM,ngọt
+7,生,SINH,học sinh
+7,産,SẢN,sản xuất
+7,用,DỤNG,dụng cụ
+7,田,ĐIỀN,ruộng
+7,由,DO,tự do
+7,男,NAM,con trai
+7,町,ĐINH,thành phố
+7,画,HỌA,ánh họa (phim)
+7,界,GIỚI,thế giới
+7,留,LƯU,lưu lại
+7,番,PHIÊN,lượt
+7,疒,BỘ NẠCH,bộ thủ (bệnh tật)
+7,病,BỆNH,bệnh viện
+7,白,BẠCH,trắng
+7,百,BÁCH,một trăm
+7,皆,GIAI,mọi người
+7,目,MỤC,mắt
+7,真,CHÂN,chân thật
+7,矢,BỘ THỈ,mũi tên
+7,知,TRI,biết
+7,短,ĐOẢN,ngắn
+7,石,THẠCH,hòn đá
+7,研,NGHIÊN,nghiên cứu
+7,礻,BỘ THỊ,bộ thủ (thần linh)
+7,礼,LỄ,lễ nghi
+7,社,XÃ,xã hội
+7,祝,CHÚC,chúc mừng
+7,祭,TẾ,lễ hội
+7,禾,BỘ HÒA,bộ thủ (lúa)
+7,私,TƯ,tôi
+7,秋,THU,mùa thu
+7,空,KHÔNG,không khí
+7,立,LẬP,đứng
+7,⺮,BỘ TRÚC,bộ thủ (tre trúc)
+7,笑,TIẾU,cười
+7,答,ĐÁP,trả lời
+7,箱,TƯƠNG,cái hộp
+7,糸,BỘ TY,sợi tơ
+7,約,ƯỚC,giao ước
+8,紙,CHỈ,tờ giấy
+8,経,KINH,kinh tế
+8,終,CHUNG,chung kết
+8,紹,THIỆU,giới thiệu
+8,結,KẾT,kết hôn
+8,練,LUYỆN,luyện tập
+8,緒,TỰ,cùng nhau
+8,羊,DƯƠNG,con cừu
+8,着,TRƯỚC,mặc
+8,羽,VŨ,cánh
+8,習,TẬP,học tập
+8,耂,BỘ LÃO,bộ thủ (già)
+8,考,KHẢO,suy nghĩ
+8,者,GIẢ,tác giả
+8,耳,NHĨ,tai
+8,聞,VĂN,nghe/hỏi
+8,肉,NHỤC,thịt
+8,自,TỰ,tự mình
+8,舎,XÁ,cư xá
+8,良,LƯƠNG,tốt
+8,色,SẮC,màu sắc
+8,行,HÀNH,đi
+8,西,TÂY,phía Tây
+8,要,YẾU,cần thiết
+8,見,KIẾN,xem/nhìn
+8,親,THÂN,thân thiết
+8,言,NGÔN,lời nói
+8,計,KẾ,kế hoạch
+8,記,KÝ,ghi chép
+8,証,CHỨNG,chứng nhận
+8,試,THÍ,thí nghiệm
+8,話,THOẠI,nói chuyện
+8,語,NGỮ,tiếng
+8,誌,CHÍ,tạp chí
+8,説,THUYẾT,thuyết minh
+8,読,ĐỘC,đọc
+8,貝,BỐI,con sò
+8,財,TÀI,tài sản
+8,買,MÃI,mua
+8,貸,THẢI,cho vay/cho mượn
+8,赤,XÍCH,đỏ
+8,走,TẨU,chạy
+8,起,KHỞI,khởi đầu/thức dậy
+8,足,TÚC,chân
+8,車,XA,xe hơi
+8,転,CHUYỂN,chuyển động
+8,軽,KHINH,nhẹ
+8,辛,TÂN,cay
+8,辞,TỪ,từ điển
+8,酉,BỘ DẬU,bộ thủ (rượu)
+9,酒,TỬU,rượu
+9,配,PHỐI,phân phối
+9,重,TRỌNG,nặng
+9,金,KIM,vàng/tiền
+9,銀,NGÂN,bạc/ngân hàng
+9,長,TRƯỜNG,dài
+9,門,MÔN,cổng
+9,閉,BẾ,đóng
+9,開,KHAI,mở
+9,間,GIAN,không gian
+9,隹,BỘ CHUY,bộ thủ (chim đuôi ngắn)
+9,雑,TẠP,tạp chí
+9,難,NAN,khó
+9,雨,VŨ,mưa
+9,雪,TUYẾT,tuyết
+9,電,ĐIỆN,điện thoại
+9,青,THANH,xanh
+9,静,TĨNH,yên tĩnh
+9,音,ÂM,âm thanh
+9,頁,BỘ HIỆT,bộ thủ (đầu)
+9,頭,ĐẦU,đầu
+9,顔,NHAN,mặt
+9,題,ĐỀ,vấn đề
+9,風,PHONG,gió
+9,食,THỰC,ăn
+9,飠,BỘ THỰC,bộ thủ (ăn)
+9,飲,ẨM,uống
+9,飯,PHẠN,cơm
+9,館,QUÁN,đại sứ quán
+9,首,THỦ,cái cổ/thủ tướng
+9,馬,MÃ,ngựa
+9,駅,DỊCH,nhà ga
+9,験,NGHIỆM,thí nghiệm
+9,高,CAO,cao/đắt
+9,魚,NGƯ,cá
+9,鳥,ĐIỂU,chim
+9,黒,HẮC,đen

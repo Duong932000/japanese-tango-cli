@@ -21,8 +21,10 @@ def test_list_levels_without_data_dir(data_dir):
 
 def test_load_level_reads_all_files(sample_n5):
     words = by_key(vocab.load_level("N5"))
-    assert len(words) == 7
-    assert words["学生|がくせい"].kind == "kanji"
+    assert len(words) == 9
+    assert words["学生|がくせい"].kind == "kanji-vocab"
+    assert words["学生|がくせい"].hanviet == "HỌC SINH"
+    assert words["字|学"].kind == "kanji"
     assert words["|はい"].kind == "hiragana"
     assert words["|テレビ"].kind == "katakana"
 
@@ -33,7 +35,7 @@ def test_word_in_several_lessons_is_merged(sample_n5):
 
 
 def test_load_level_skips_comments_and_bad_rows(data_dir, capsys):
-    write_csv(data_dir / "N5" / "kanji.csv", ["lesson", "kanji", "kana", "meaning_vi"], [
+    write_csv(data_dir / "N5" / "kanji-vocab.csv", ["lesson", "kanji", "kana", "meaning_vi"], [
         ["# ví dụ", "学生", "がくせい", "học sinh"],
         ["1", "本", "ほん", "sách"],
         ["1", "傘", "", "ô"],
@@ -53,7 +55,7 @@ def test_kind_falls_back_to_content_for_other_files(data_dir):
         ["1", "本", "ほん", "sách"],
     ])
     kinds = {w.kana: w.kind for w in vocab.load_level("N5")}
-    assert kinds == {"テレビ": "katakana", "はい": "hiragana", "ほん": "kanji"}
+    assert kinds == {"テレビ": "katakana", "はい": "hiragana", "ほん": "kanji-vocab"}
 
 
 def test_csv_with_bom_is_read(data_dir):
@@ -89,3 +91,21 @@ def test_parse_lessons_rejects_unknown(text):
 
 def test_lessons_sorted_numerically():
     assert sorted(["10", "2", "extra", "1"], key=vocab.lesson_sort_key) == ["1", "2", "10", "extra"]
+
+
+def test_single_kanji_row_needs_kanji_not_kana(data_dir, capsys):
+    write_csv(data_dir / "N5" / "kanji.csv", ["lesson", "kanji", "hanviet", "meaning_vi"], [
+        ["1", "学", "HỌC", "học"],
+        ["1", "", "SINH", "sống"],
+    ])
+    words = vocab.load_level("N5")
+    assert [(w.key, w.hanviet, w.meaning) for w in words] == [("字|学", "HỌC", "học")]
+    assert "thiếu lesson, kanji hoặc meaning_vi" in capsys.readouterr().out
+
+
+def test_same_char_as_single_kanji_and_vocab_are_separate(data_dir):
+    write_csv(data_dir / "N5" / "kanji.csv", ["lesson", "kanji", "hanviet", "meaning_vi"],
+              [["2", "本", "BẢN", "sách"]])
+    write_csv(data_dir / "N5" / "kanji-vocab.csv", ["lesson", "kanji", "kana", "hanviet", "meaning_vi"],
+              [["2", "本", "ほん", "BẢN", "sách"]])
+    assert sorted(w.key for w in vocab.load_level("N5")) == ["字|本", "本|ほん"]

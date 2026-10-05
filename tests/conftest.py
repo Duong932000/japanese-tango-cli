@@ -26,12 +26,16 @@ def write_csv(path, header, rows):
 @pytest.fixture
 def sample_n5(data_dir):
     level = data_dir / "N5"
-    write_csv(level / "kanji.csv", ["lesson", "kanji", "kana", "meaning_vi"], [
-        ["1", "学生", "がくせい", "học sinh/sinh viên"],
-        ["1", "先生", "せんせい", "giáo viên"],
-        ["2", "本", "ほん", "sách"],
-        ["3", "学生", "がくせい", "học sinh/sinh viên"],
-        ["10", "水", "みず", "nước"],
+    write_csv(level / "kanji.csv", ["lesson", "kanji", "hanviet", "meaning_vi"], [
+        ["1", "学", "HỌC", "học"],
+        ["2", "本", "BẢN", "sách/gốc"],
+    ])
+    write_csv(level / "kanji-vocab.csv", ["lesson", "kanji", "kana", "hanviet", "meaning_vi"], [
+        ["1", "学生", "がくせい", "HỌC SINH", "học sinh/sinh viên"],
+        ["1", "先生", "せんせい", "TIÊN SINH", "giáo viên"],
+        ["2", "本", "ほん", "BẢN", "sách"],
+        ["3", "学生", "がくせい", "HỌC SINH", "học sinh/sinh viên"],
+        ["10", "水", "みず", "THỦY", "nước"],
     ])
     write_csv(level / "hiragana.csv", ["lesson", "kana", "meaning_vi"], [
         ["1", "はい", "vâng"],

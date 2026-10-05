@@ -1,0 +1,2 @@
+# Tùy chọn: vẽ chữ kanji cỡ lớn trên terminal. Thiếu thì tool hiện chữ thường.
+pillow>=10
