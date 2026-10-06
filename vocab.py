@@ -759,7 +759,7 @@ def main():
 
     levels = list_levels()
     if not levels:
-        sys.exit(red(f"Chưa có dữ liệu. Tạo thư mục {DATA_DIR}/N5 chứa các file CSV."))
+        sys.exit(red(f"Chưa có dữ liệu. Tạo thư mục {DATA_DIR}/n5 chứa các file CSV."))
     level = choose_level(levels, args.level)
     all_words = load_level(level)
     if not all_words:
