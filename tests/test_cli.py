@@ -42,7 +42,7 @@ def test_study_one_lesson_shows_only_its_words(sample_n5, run):
 
 
 def test_category_and_lesson_chosen_from_menu(sample_n5, run):
-    code, out = run([], ["9", "4", "7", "2", ":q"])
+    code, out = run([], ["9", "4", "", "7", "2", ":q"])
     assert "1. Từ vựng (hiragana/katakana) (3)" in out
     assert "2. Kanji đơn (2)" in out
     assert "3. Từ vựng kanji (4)" in out
@@ -53,7 +53,7 @@ def test_category_and_lesson_chosen_from_menu(sample_n5, run):
 
 
 def test_enter_picks_vocab_category(sample_n5, run):
-    code, out = run([], ["", "2", ":q"])
+    code, out = run([], ["", "", "2", ":q"])
     assert "Bài 2 (2 từ)" in out
     assert "N5 · Từ vựng (hiragana/katakana) · bài 2 · 2 thẻ" in out
 
@@ -92,7 +92,7 @@ def test_kind_filter(sample_n5, run):
 
 
 def test_all_lessons_uses_schedule(sample_n5, run):
-    code, out = run(["-t", "all", "-b", "all", "--new", "2"], [":q"])
+    code, out = run(["-t", "all", "-b", "all", "--new", "2"], ["", ":q"])
     assert "Chưa học: 9 từ" in out
     assert "N5 · Tất cả · tất cả các bài · 2 thẻ" in out
 
@@ -105,7 +105,7 @@ def test_stats_per_lesson(sample_n5, run):
 
 
 def test_unknown_lesson_exits(sample_n5, run):
-    code, out = run(["-t", "4", "-b", "99"])
+    code, out = run(["-t", "4", "-b", "99", "--mode", "jv"])
     assert code != 0
 
 
@@ -167,9 +167,23 @@ def test_write_kanji_reveals_character(sample_n5, run):
     assert "Kết quả: 1/1" in out
 
 
-def test_no_kanji_mode_menu_for_other_categories(sample_n5, run):
-    code, out = run([], ["1", "1", ":q"])
+@pytest.mark.parametrize("category", ["1", "3", "4"])
+@pytest.mark.parametrize("choice, prompt", [
+    ("1", "Nghĩa tiếng Việt"),
+    ("2", "Tiếng Nhật (kana / kanji / romaji)"),
+])
+def test_study_mode_menu_for_vocab_categories(sample_n5, run, category, choice, prompt):
+    code, out = run(["-b", "2" if category == "1" else "10"], [category, choice, ":q"])
     assert "Cách học kanji đơn:" not in out
+    assert "Cách học:" in out
+    assert "2. Nhìn nghĩa tiếng Việt → viết tiếng Nhật" in out
+    assert prompt in out
+
+
+def test_study_mode_menu_skipped_when_mode_given(sample_n5, run):
+    code, out = run(["-t", "1", "-b", "2", "--mode", "vj"], [":q"])
+    assert "Cách học:" not in out
+    assert "Tiếng Nhật (kana / kanji / romaji)" in out
 
 
 def test_single_kanji_is_studied_by_page(sample_n5, run):

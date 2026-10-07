@@ -692,6 +692,12 @@ def choose_category(words, wanted):
         print(red(f"Chưa có thẻ nào thuộc loại {title}."))
 
 
+# Cách học: số -> (mode, mô tả). Kanji đơn có mô tả riêng; Enter = lựa chọn mặc định.
+STUDY_MODES = {
+    "1": ("jv", "Nhìn chữ tiếng Nhật → đoán nghĩa tiếng Việt"),
+    "2": ("vj", "Nhìn nghĩa tiếng Việt → viết tiếng Nhật"),
+    "3": ("mix", "Trộn cả hai"),
+}
 KANJI_MODES = {
     "1": ("jv", "Nhìn chữ kanji → đoán âm Hán Việt / nghĩa"),
     "2": ("vj", "Nhìn âm Hán Việt → viết chữ kanji"),
@@ -699,17 +705,21 @@ KANJI_MODES = {
 }
 
 
-def choose_kanji_mode():
-    print(bold("Cách học kanji đơn:"))
-    for number, (_, title) in KANJI_MODES.items():
-        print(f"  {number}. {title}")
+def choose_mode(kinds):
+    if kinds == {"kanji"}:
+        title, modes, default = "Cách học kanji đơn:", KANJI_MODES, "1"
+    else:
+        title, modes, default = "Cách học:", STUDY_MODES, "3"
+    print(bold(title))
+    for number, (_, text) in modes.items():
+        print(f"  {number}. {text}")
     while True:
-        ans = read("Chọn (1-3, Enter = 1): ")
+        ans = read(f"Chọn (1-3, Enter = {default}): ")
         if ans is None or ans.strip() == ":q":
             sys.exit(0)
-        number = ans.strip() or "1"
-        if number in KANJI_MODES:
-            return KANJI_MODES[number][0]
+        number = ans.strip() or default
+        if number in modes:
+            return modes[number][0]
 
 
 def lesson_label(level, category, lessons, unit="bài"):
@@ -732,7 +742,7 @@ def main():
     p.add_argument("--new", type=int, default=10,
                    help="khi chọn all: tối đa số từ mới mỗi lượt (mặc định 10)")
     p.add_argument("--mode", choices=("mix", "vj", "jv"),
-                   help="vj = Việt→Nhật, jv = Nhật→Việt, mix = ngẫu nhiên (mặc định). "
+                   help="vj = Việt→Nhật, jv = Nhật→Việt, mix = ngẫu nhiên (bỏ trống thì hỏi bằng menu). "
                         "Với kanji đơn: jv = nhìn kanji đoán Hán Việt, vj = nhìn Hán Việt viết kanji")
     p.add_argument("--script", choices=("kanji", "kana", "mix"), default="kanji",
                    help="từ vựng kanji hiện bằng kanji (mặc định), kana, hay ngẫu nhiên")
@@ -774,7 +784,7 @@ def main():
     if not pool:
         sys.exit(red(f"Chưa có thẻ nào thuộc loại {category}."))
     if args.mode is None:
-        args.mode = choose_kanji_mode() if kinds == {"kanji"} and not args.stats else "mix"
+        args.mode = "mix" if args.stats else choose_mode(kinds)
     unit, noun = units_for(kinds)
 
     if args.stats and args.lesson is None:

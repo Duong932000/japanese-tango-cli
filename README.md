@@ -78,7 +78,7 @@ Từ trả lời sai sẽ được hỏi lại thêm một lần trong cùng lư
 
 ```bash
 ./run.sh                    # hỏi chọn bài rồi học
-./run.sh -t 1 -b 3          # học ngay từ vựng bài 3, không hỏi menu
+./run.sh -t 1 -b 3 --mode vj # học ngay từ vựng bài 3, không hỏi menu
 ./run.sh -b 1-5 --mode vj   # bài 1–5, chỉ hỏi Việt → Nhật
 ./run.sh -b all             # ôn theo lịch: từ đến hạn trước, rồi thêm từ mới
 ./run.sh -b 2 --hard        # chỉ ôn những từ bài 2 bạn đã từng sai
@@ -91,7 +91,7 @@ Từ trả lời sai sẽ được hỏi lại thêm một lần trong cùng lư
 |---|---|
 | `-b`, `--lesson` | chọn bài (với kanji đơn là trang): `3`, `1-5`, `1,3,7`, `all` |
 | `-l`, `--level` | chọn cấp độ, ví dụ `N4` (mặc định tự chọn nếu chỉ có một cấp) |
-| `--mode` | `vj` Việt→Nhật, `jv` Nhật→Việt, `mix` trộn ngẫu nhiên (mặc định) |
+| `--mode` | `vj` Việt→Nhật (nhìn nghĩa, viết tiếng Nhật), `jv` Nhật→Việt, `mix` trộn ngẫu nhiên. Bỏ trống thì tool hỏi bằng menu "Cách học" sau khi chọn loại thẻ |
 | `--script` | từ vựng kanji hiện bằng `kanji` (mặc định), `kana`, hoặc `mix` |
 | `-t`, `--kind` | loại thẻ: `1` từ vựng, `2` kanji đơn, `3` từ vựng kanji, `4` tất cả (hoặc `hiragana`, `katakana` để lọc riêng) |
 | `--no-big` | không vẽ chữ kanji cỡ lớn |
