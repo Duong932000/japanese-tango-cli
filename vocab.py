@@ -163,6 +163,7 @@ class Word:
     kind: str
     hanviet: str = ""
     lessons: list = field(default_factory=list)
+    parts: list = field(default_factory=list)  # [(chữ, tên, nghĩa)] các phần cấu thành chữ kanji đơn
     hira: str = field(init=False)
     romaji: str = field(init=False)
 
@@ -227,7 +228,32 @@ def load_level(level):
                 w = words.setdefault(new.key, new)
                 if lesson not in w.lessons:
                     w.lessons.append(lesson)
+                if single and get("parts") and not w.parts:
+                    w.parts = parse_parts(get("parts"))
+    known = {w.kanji.strip("～〜~"): (w.hanviet, radical_meaning(w.meaning))
+             for w in words.values() if w.is_single_kanji}
+    for w in words.values():
+        w.parts = [(ch, name, meaning) if name or meaning else (ch, *known.get(ch, ("", "")))
+                   for ch, name, meaning in w.parts]
     return list(words.values())
+
+
+def parse_parts(text):
+    """'門+是(THỊ: phải/đúng)+丷(: hai chấm)' -> [('門', '', ''), ('是', 'THỊ', 'phải/đúng'),
+    ('丷', '', 'hai chấm')]. Phần không ghi ngoặc sẽ tra tên và nghĩa trong kanji.csv."""
+    parts = []
+    for item in text.split("+"):
+        m = re.fullmatch(r"\s*([^()\s]+)\s*(?:\((.*)\))?\s*", item)
+        if m:
+            name, _, meaning = (m[2] or "").partition(":")
+            parts.append((m[1], name.strip(), meaning.strip()))
+    return parts
+
+
+def radical_meaning(meaning):
+    """'bộ thủ (chim đuôi ngắn)' -> 'chim đuôi ngắn'; nghĩa thường giữ nguyên."""
+    m = re.search(r"bộ thủ \((.*?)\)", meaning)
+    return m[1] if m else meaning
 
 
 def parse_lessons(text, available, unit="bài"):
@@ -466,19 +492,70 @@ def show_japanese(text):
     print("    " + bold(cyan(text)) + "\n")
 
 
+def parts_text(word, with_char=True):
+    """Gợi ý (with_char=False) chỉ ghi tên và nghĩa, không lộ chữ: 'THỊ (phải/đúng) + BỘ HIỆT (đầu)'."""
+    def one(ch, name, meaning):
+        text = f"{name} ({meaning})" if name and meaning else name or meaning
+        return f"{ch} {text}".strip() if with_char else text or "?"
+    return " + ".join(one(*part) for part in word.parts)
+
+
+def show_hint(word):
+    if word.parts:
+        print("    " + yellow("Gợi ý: ") + parts_text(word, with_char=False) + "\n")
+    else:
+        print("    " + dim("Chưa có gợi ý cho chữ này (thường là chữ cơ bản, không tách nhỏ hơn).") + "\n")
+
+
 def reveal(word, direction="jv"):
+    if direction == "kj":
+        show_japanese(word.kanji)
     if word.is_single_kanji:
         if direction == "vj":
             show_japanese(word.kanji)
-        print(f"    {bold(word.kanji)}  {green(f'{word.hanviet}  —  {word.meaning}')}\n")
+        print(f"    {bold(word.kanji)}  {green(f'{word.hanviet}  —  {word.meaning}')}")
+        print(("    " + dim(f"= {parts_text(word)}") + "\n") if word.parts else "")
         return
     extra = f"  ({word.hanviet})" if word.hanviet else ""
     print(f"    {bold(word.display())}  {green(f'{word.romaji}  —  {word.meaning}{extra}')}\n")
 
 
+def read_with_hint(prompt, hint):
+    """Đọc câu trả lời; gõ ? thì gọi hint() rồi hỏi lại."""
+    ans = read(prompt)
+    if ans is not None and ans.strip() in ("?", "？"):
+        hint()
+        ans = read(prompt)
+    return ans
+
+
+def show_hanviet_hint(word):
+    print("    " + yellow("Gợi ý: ") + (word.hanviet or "chưa có âm Hán Việt") + "\n")
+
+
+def has_reading(word):
+    """Từ vựng có cả kanji lẫn kana: học được hai chiều hiragana ↔ kanji."""
+    return not word.is_single_kanji and bool(word.kanji) and bool(word.kana)
+
+
+def check_reading(answer, word):
+    """Chiều kanji → hiragana: chỉ nhận kana hoặc romaji, không nhận chép lại chữ kanji."""
+    return norm_jp(answer) != norm_jp(word.kanji) and check_jp(answer, word)
+
+
 def ask(word, direction, script, dup_kana, header):
     print(dim("─" * 48))
-    if direction == "jv":
+    if direction == "kj":
+        print(f"{header} {dim('Hiragana → Kanji')}\n")
+        show_japanese(word.kana)
+        print("    " + dim(word.meaning) + "\n")
+        ans = read_with_hint("Viết kanji ra giấy rồi bấm Enter (hoặc gõ chữ, ? = âm Hán Việt): ",
+                             lambda: show_hanviet_hint(word))
+    elif direction == "jk":
+        print(f"{header} {dim('Kanji → Hiragana')}\n")
+        show_japanese(word.kanji)
+        ans = read("Cách đọc (hiragana / romaji): ")
+    elif direction == "jv":
         print(f"{header} {dim('Nhật → Việt')}\n")
         show_japanese(jp_prompt_text(word, script, dup_kana))
         ans = read("Âm Hán Việt hoặc nghĩa: " if word.is_single_kanji else "Nghĩa tiếng Việt: ")
@@ -486,7 +563,8 @@ def ask(word, direction, script, dup_kana, header):
         print(f"{header} {dim('Việt → Nhật')}\n")
         if word.is_single_kanji:
             print("    " + bold(yellow(f"{word.hanviet}  —  {word.meaning}")) + "\n")
-            ans = read("Viết chữ kanji ra giấy rồi bấm Enter (hoặc gõ chữ): ")
+            ans = read_with_hint("Viết chữ kanji ra giấy rồi bấm Enter (hoặc gõ chữ, ? = gợi ý): ",
+                                 lambda: show_hint(word))
         else:
             hint = dim(f"  ({word.hanviet})") if word.hanviet else ""
             print("    " + bold(yellow(word.meaning)) + hint + "\n")
@@ -499,7 +577,12 @@ def ask(word, direction, script, dup_kana, header):
         reveal(word, direction)
         return yes_no("Bạn có nhớ đúng không? [y/n]: ")
 
-    result = check_jp(ans, word) if direction == "vj" else check_vi(ans, word)
+    if direction == "kj":
+        result = norm_jp(ans) == norm_jp(word.kanji)
+    elif direction == "jk":
+        result = check_reading(ans, word)
+    else:
+        result = check_jp(ans, word) if direction == "vj" else check_vi(ans, word)
     if result:
         note = dim(" (đúng nhưng thiếu dấu)") if result == "noaccent" else ""
         print(green("✓ Đúng!") + note)
@@ -508,6 +591,17 @@ def ask(word, direction, script, dup_kana, header):
     print(red("✗ Chưa đúng."))
     reveal(word, direction)
     return yes_no("Vẫn tính là đúng (đồng nghĩa / cách viết khác)? [y/N]: ", default=False)
+
+
+def pick_direction(mode, word):
+    """mix = Việt ↔ Nhật, kmix = hiragana ↔ kanji. Từ không có kanji thì hỏi theo nghĩa."""
+    if mode == "mix":
+        return random.choice(("vj", "jv"))
+    if mode == "kmix":
+        mode = random.choice(("kj", "jk"))
+    if mode in ("kj", "jk") and not has_reading(word):
+        return random.choice(("vj", "jv"))
+    return mode
 
 
 def run_session(cards, progress, args, dup_kana, today):
@@ -520,7 +614,7 @@ def run_session(cards, progress, args, dup_kana, today):
         while i < len(queue):
             word, is_repeat = queue[i]
             i += 1
-            direction = args.mode if args.mode != "mix" else random.choice(("vj", "jv"))
+            direction = pick_direction(args.mode, word)
             header = yellow("[ôn lại]") if is_repeat else bold(f"[{done + 1}/{total}]")
             ok = ask(word, direction, args.script, dup_kana, header)
             if ok is None:
@@ -698,6 +792,12 @@ STUDY_MODES = {
     "2": ("vj", "Nhìn nghĩa tiếng Việt → viết tiếng Nhật"),
     "3": ("mix", "Trộn cả hai"),
 }
+KANJI_VOCAB_MODES = {
+    **STUDY_MODES,
+    "4": ("kj", "Nhìn hiragana → viết kanji (vd: せんせい → 先生)"),
+    "5": ("jk", "Nhìn kanji → đọc hiragana (vd: 先生 → せんせい)"),
+    "6": ("kmix", "Trộn hiragana ↔ kanji"),
+}
 KANJI_MODES = {
     "1": ("jv", "Nhìn chữ kanji → đoán âm Hán Việt / nghĩa"),
     "2": ("vj", "Nhìn âm Hán Việt → viết chữ kanji"),
@@ -708,13 +808,15 @@ KANJI_MODES = {
 def choose_mode(kinds):
     if kinds == {"kanji"}:
         title, modes, default = "Cách học kanji đơn:", KANJI_MODES, "1"
+    elif kinds == {"kanji-vocab"}:
+        title, modes, default = "Cách học từ vựng kanji:", KANJI_VOCAB_MODES, "3"
     else:
         title, modes, default = "Cách học:", STUDY_MODES, "3"
     print(bold(title))
     for number, (_, text) in modes.items():
         print(f"  {number}. {text}")
     while True:
-        ans = read(f"Chọn (1-3, Enter = {default}): ")
+        ans = read(f"Chọn (1-{len(modes)}, Enter = {default}): ")
         if ans is None or ans.strip() == ":q":
             sys.exit(0)
         number = ans.strip() or default
@@ -741,9 +843,11 @@ def main():
     p.add_argument("-n", type=int, help="số thẻ mỗi lượt (mặc định: cả bài, hoặc 20 khi chọn all)")
     p.add_argument("--new", type=int, default=10,
                    help="khi chọn all: tối đa số từ mới mỗi lượt (mặc định 10)")
-    p.add_argument("--mode", choices=("mix", "vj", "jv"),
+    p.add_argument("--mode", choices=("mix", "vj", "jv", "kj", "jk", "kmix"),
                    help="vj = Việt→Nhật, jv = Nhật→Việt, mix = ngẫu nhiên (bỏ trống thì hỏi bằng menu). "
-                        "Với kanji đơn: jv = nhìn kanji đoán Hán Việt, vj = nhìn Hán Việt viết kanji")
+                        "Với kanji đơn: jv = nhìn kanji đoán Hán Việt, vj = nhìn Hán Việt viết kanji. "
+                        "Với từ vựng kanji: kj = hiragana→viết kanji, jk = kanji→đọc hiragana, "
+                        "kmix = trộn kj/jk")
     p.add_argument("--script", choices=("kanji", "kana", "mix"), default="kanji",
                    help="từ vựng kanji hiện bằng kanji (mặc định), kana, hay ngẫu nhiên")
     p.add_argument("-t", "--kind", metavar="LOẠI",

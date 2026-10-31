@@ -11,7 +11,7 @@ import vocab
 HEADERS = {
     "hiragana": ["lesson", "kana", "meaning_vi"],
     "katakana": ["lesson", "kana", "meaning_vi"],
-    "kanji": ["lesson", "kanji", "hanviet", "meaning_vi"],
+    "kanji": ["lesson", "kanji", "hanviet", "meaning_vi", "parts"],
     "kanji-vocab": ["lesson", "kanji", "kana", "hanviet", "meaning_vi"],
 }
 REQUIRED = {
@@ -78,6 +78,21 @@ def test_single_kanji_is_one_character(path):
         return len(char) == 1 and KANJI_OR_RADICAL.match(char)
     bad = [n for n, r in data if not ok(col(r, "kanji"))]
     assert not bad, f"kanji.csv chỉ chứa đúng một chữ kanji hoặc bộ thủ mỗi dòng: dòng {bad}"
+
+
+@pytest.mark.parametrize("path", files("kanji"), ids=file_id)
+def test_kanji_parts_have_names(path):
+    """Mỗi phần trong cột parts phải có trong kanji.csv, hoặc ghi tên trong ngoặc: 是(THỊ: phải/đúng)."""
+    _, data = rows(path)
+    listed = {col(r, "kanji").strip("～〜~") for _, r in data}
+    bad = []
+    for n, r in data:
+        text = col(r, "parts")
+        parts = vocab.parse_parts(text)
+        if text and len(parts) != text.count("+") + 1:
+            bad.append((n, text))
+        bad += [(n, ch) for ch, name, meaning in parts if not meaning and ch not in listed]
+    assert not bad, f"cột parts sai định dạng hoặc thiếu tên/nghĩa (ghi dạng 是(THỊ: phải/đúng)): {bad}"
 
 
 @pytest.mark.parametrize("path", files("kanji-vocab"), ids=file_id)

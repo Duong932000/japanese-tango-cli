@@ -1,39 +1,395 @@
-lesson,kanji,kana,meaning_vi
-16,歩く,あるく,đi bộ/đi
-16,住む,すむ,sinh sống/sống (ở Nhật)
-16,変わる,かわる,thay đổi (thời tiết)
-16,起こる,おこる,xảy ra (tai nạn)
-16,長い,ながい,dài
-16,短い,みじかい,ngắn
-16,半分,はんぶん,một nửa
-16,お金持ち,おかねもち,giàu có
-16,話,はなし,câu chuyện
-16,せんたく物,せんたくもの,quần áo giặt
-16,風が ふく,かぜが ふく,gió thổi
-16,雨が ふる,あめが ふる,trời mưa
-16,雨が 止む,あめが やむ,tạnh mưa
-16,冷たい,つめたい,lạnh
-16,安全,あんぜん,an toàn
-16,一日中,いちにちじゅう,suốt cả ngày
-16,北部,ほくぶ,Bắc bộ
-16,中部,ちゅうぶ,Trung bộ
-16,南部,なんぶ,Nam bộ
-16,首都,しゅと,thủ đô
-16,空,そら,bầu trời
-16,林,はやし,rừng
-16,～方,～かた,cách～
-17,返す,かえす,trả lại (sách)
-17,出す,だす,gửi (thư)/nộp/lấy
-17,取る,とる,lấy (điện thoại)/ghi chú
-17,持つ,もつ,cầm/mang (hành lý)
-17,消す,けす,tắt (đèn)
-17,浴びる,あびる,tắm (vòi sen)
-17,閉める,しめる,đóng (cửa)
-17,開ける,あける,mở (cửa)
-17,参加する,さんかする,tham gia (cuộc thi)
-17,実家,じっか,quê nhà/nhà bố mẹ
-17,海外旅行,かいがいりょこう,du lịch nước ngoài
-17,体験,たいけん,trải nghiệm
-17,遊ぶ,あそぶ,chơi/vui đùa
-17,文学,ぶんがく,văn học
-17,楽しみ,たのしみ,mong đợi/mong chờ
+lesson,kanji,kana,hanviet,meaning_vi
+1,教師,きょうし,GIÁO SƯ,giáo viên
+1,先生,せんせい,TIÊN SINH,giáo viên (để gọi)
+1,学生,がくせい,HỌC SINH,học sinh
+1,小学生,しょうがくせい,TIỂU HỌC SINH,học sinh cấp 1
+1,中学生,ちゅうがくせい,TRUNG HỌC SINH,học sinh cấp 2
+1,高校生,こうこうせい,CAO HIỆU SINH,học sinh cấp 3
+1,大学生,だいがくせい,ĐẠI HỌC SINH,sinh viên
+1,実習生,じっしゅうせい,THỰC TẬP SINH,thực tập sinh
+1,留学生,りゅうがくせい,LƯU HỌC SINH,du học sinh
+1,会社員,かいしゃいん,HỘI XÃ VIÊN,nhân viên công ty
+1,銀行員,ぎんこういん,NGÂN HÀNH VIÊN,nhân viên ngân hàng
+1,店員,てんいん,ĐIẾM VIÊN,nhân viên bán hàng
+1,医者,いしゃ,Y GIẢ,bác sĩ
+1,主婦,しゅふ,CHỦ PHỤ,nội trợ
+1,運転手,うんてんしゅ,VẬN CHUYỂN THỦ,tài xế
+1,歌手,かしゅ,CA THỦ,ca sĩ
+1,社長,しゃちょう,XÃ TRƯỞNG,giám đốc
+1,校長,こうちょう,HIỆU TRƯỞNG,hiệu trưởng
+1,店長,てんちょう,ĐIẾM TRƯỞNG,trưởng cửa hàng
+1,公務員,こうむいん,CÔNG VỤ VIÊN,công chức nhà nước
+1,～才,～さい,TÀI,tuổi
+1,日本,にほん,NHẬT BẢN,Nhật Bản
+1,中国,ちゅうごく,TRUNG QUỐC,Trung Quốc
+1,日本人,にほんじん,NHẬT BẢN NHÂN,người Nhật
+1,中国人,ちゅうごくじん,TRUNG QUỐC NHÂN,người Trung Quốc
+1,ベトナム人,ベトナムじん,ベトナム NHÂN,người Việt Nam
+1,失礼ですが,しつれいですが,THẤT LỄ ですが,xin thất lễ
+1,出身,しゅっしん,XUẤT THÂN,quê/xuất thân
+1,同僚,どうりょう,ĐỒNG LIÊU,đồng nghiệp
+1,私,わたし,TƯ,tôi
+1,この人,このひと,この NHÂN,người này
+1,この方,このかた,この PHƯƠNG,vị này
+1,あの人,あのひと,あの NHÂN,người kia
+1,あの方,あのかた,あの PHƯƠNG,vị kia
+1,お名前は,おなまえは,お DANH TIỀN は,tên
+1,お仕事は,おしごとは,お SĨ SỰ は,công việc
+1,お国は,おくには,お QUỐC は,quốc gia
+2,本,ほん,BẢN,sách
+2,辞書,じしょ,TỪ THƯ,từ điển
+2,新聞,しんぶん,TÂN VĂN,báo
+2,雑誌,ざっし,TẠP CHÍ,tạp chí
+2,お菓子,おかし,お QUẢ TỬ,bánh kẹo
+2,電話,でんわ,ĐIỆN THOẠI,điện thoại
+2,時計,とけい,THỜI KẾ,đồng hồ
+2,財布,さいふ,TÀI BỐ,cái ví
+2,地図,ちず,ĐỊA ĐỒ,bản đồ
+2,自動車,じどうしゃ,TỰ ĐỘNG XA,xe hơi
+2,自転車,じてんしゃ,TỰ CHUYỂN XA,xe đạp
+2,電車,でんしゃ,ĐIỆN XA,xe điện
+2,～語,～ご,NGỮ,tiếng～
+2,ベトナム語,ベトナムご,ベトナム NGỮ,tiếng Việt
+2,日本語,にほんご,NHẬT BẢN NGỮ,tiếng Nhật
+2,中国語,ちゅうごくご,TRUNG QUỐC NGỮ,tiếng Trung Quốc
+2,英語,えいご,ANH NGỮ,tiếng Anh
+2,学校,がっこう,HỌC HIỆU,trường học
+2,小学校,しょうがっこう,TIỂU HỌC HIỆU,trường tiểu học
+2,中学校,ちゅうがっこう,TRUNG HỌC HIỆU,trường trung học
+2,高校,こうこう,CAO HIỆU,trường cấp 3
+2,大学,だいがく,ĐẠI HỌC,trường đại học
+2,会社,かいしゃ,HỘI XÃ,công ty
+2,電気,でんき,ĐIỆN KHÍ,điện
+2,手帳,てちょう,THỦ TRƯỚNG,sổ tay
+2,ゴミ箱,ゴミばこ,ゴミ TƯƠNG,thùng rác
+2,消しゴム,けしごむ,TIÊU しゴム,cục gôm
+2,物,もの,VẬT,đồ vật/vật
+2,机,つくえ,KỶ,cái bàn
+2,車,くるま,XA,xe hơi
+2,男,おとこ,NAM,nam
+2,女,おんな,NỮ,nữ
+2,何語,なにご,HÀ NGỮ,tiếng gì
+2,何の本,なんのほん,HÀ の BẢN,sách gì
+2,お仕事は,おしごとは,お SĨ SỰ は,công việc
+2,お国は,おくには,お QUỐC は,quốc gia
+3,会社,かいしゃ,HỘI XÃ,công ty
+3,学校,がっこう,HỌC HIỆU,trường học
+3,食堂,しょくどう,THỰC ĐƯỜNG,nhà ăn
+3,事務室,じむしつ,SỰ VỤ THẤT,văn phòng
+3,教室,きょうしつ,GIÁO THẤT,phòng học
+3,寝室,しんしつ,TẨM THẤT,phòng ngủ
+3,浴室,よくしつ,DỤC THẤT,nhà tắm
+3,会議室,かいぎしつ,HỘI NGHỊ THẤT,phòng họp
+3,図書室,としょしつ,ĐỒ THƯ THẤT,thư viện nhỏ
+3,図書館,としょかん,ĐỒ THƯ QUÁN,thư viện lớn
+3,会場,かいじょう,HỘI TRƯỜNG,hội trường
+3,部屋,へや,BỘ ỐC,căn phòng
+3,屋上,おくじょう,ỐC THƯỢNG,sân thượng
+3,公園,こうえん,CÔNG VIÊN,công viên
+3,遊園地,ゆうえんち,DU VIÊN ĐỊA,khu vui chơi
+3,動物園,どうぶつえん,ĐỘNG VẬT VIÊN,sở thú
+3,映画館,えいがかん,ÁNH HỌA QUÁN,rạp chiếu phim
+3,大使館,たいしかん,ĐẠI SỨ QUÁN,đại sứ quán
+3,喫茶店,きっさてん,KHIẾT TRÀ ĐIẾM,quán cà phê
+3,銀行,ぎんこう,NGÂN HÀNH,ngân hàng
+3,空港,くうこう,KHÔNG CẢNG,sân bay
+3,病院,びょういん,BỆNH VIỆN,bệnh viện
+3,教会,きょうかい,GIÁO HỘI,nhà thờ
+3,市役所,しやくしょ,THỊ DỊCH SỞ,cơ quan hành chính
+3,東京,とうきょう,ĐÔNG KINH,Tokyo
+3,大阪,おおさか,ĐẠI PHẢN,Osaka
+3,京都,きょうと,KINH ĐÔ,Kyoto
+3,電話番号,でんわばんごう,ĐIỆN THOẠI PHIÊN HIỆU,số điện thoại
+3,何番,なんばん,HÀ PHIÊN,số mấy
+3,円,えん,VIÊN,yên
+3,家,いえ,GIA,nhà
+3,お寺,おてら,お TỰ,chùa
+3,駅,えき,DỊCH,nhà ga
+3,市場,いちば,THỊ TRƯỜNG,chợ
+3,受付,うけつけ,THỤ PHÓ,quầy tiếp tân
+3,お手洗い,おてあらい,お THỦ TẨY い,nhà vệ sinh
+3,台所,だいどころ,ĐÀI SỞ,nhà bếp
+3,店,みせ,ĐIẾM,tiệm/quán
+3,お土産,おみやげ,お THỔ SẢN,quà lưu niệm
+3,～屋,～や,ỐC,tiệm～
+3,本屋,ほんや,BẢN ỐC,nhà sách
+3,～売り場,～うりば,MẠI り TRƯỜNG,quầy～
+3,～区,～く,KHU,quận～
+3,～通り,～どおり,THÔNG り,đường～
+3,肉,にく,NHỤC,thịt
+3,魚,さかな,NGƯ,cá
+3,花,はな,HOA,hoa
+3,東口,ひがしぐち,ĐÔNG KHẨU,cửa đông
+3,西口,にしぐち,TÂY KHẨU,cửa tây
+3,南口,みなみぐち,NAM KHẨU,cửa nam
+3,北口,きたぐち,BẮC KHẨU,cửa bắc
+3,衣料品,いりょうひん,Y LIỆU PHẨM,quần áo
+3,飲食,いんしょく,ẨM THỰC,ẩm thực
+4,一時,いちじ,NHẤT THỜI,1 giờ
+4,二時,にじ,NHỊ THỜI,2 giờ
+4,三時,さんじ,TAM THỜI,3 giờ
+4,四時,よじ,TỨ THỜI,4 giờ
+4,五時,ごじ,NGŨ THỜI,5 giờ
+4,六時,ろくじ,LỤC THỜI,6 giờ
+4,七時,しちじ,THẤT THỜI,7 giờ
+4,八時,はちじ,BÁT THỜI,8 giờ
+4,九時,くじ,CỬU THỜI,9 giờ
+4,十時,じゅうじ,THẬP THỜI,10 giờ
+4,十一時,じゅういちじ,THẬP NHẤT THỜI,11 giờ
+4,十二時,じゅうにじ,THẬP NHỊ THỜI,12 giờ
+4,何時,なんじ,HÀ THỜI,mấy giờ?
+4,～曜日,～ようび,DIỆU NHẬT,thứ～
+4,月曜日,げつようび,NGUYỆT DIỆU NHẬT,thứ 2
+4,火曜日,かようび,HỎA DIỆU NHẬT,thứ 3
+4,水曜日,すいようび,THỦY DIỆU NHẬT,thứ 4
+4,木曜日,もくようび,MỘC DIỆU NHẬT,thứ 5
+4,金曜日,きんようび,KIM DIỆU NHẬT,thứ 6
+4,土曜日,どようび,THỔ DIỆU NHẬT,thứ 7
+4,日曜日,にちようび,NHẬT DIỆU NHẬT,chủ nhật
+4,何曜日,なんようび,HÀ DIỆU NHẬT,thứ mấy?
+4,一月,いちがつ,NHẤT NGUYỆT,tháng 1
+4,二月,にがつ,NHỊ NGUYỆT,tháng 2
+4,三月,さんがつ,TAM NGUYỆT,tháng 3
+4,四月,しがつ,TỨ NGUYỆT,tháng 4
+4,五月,ごがつ,NGŨ NGUYỆT,tháng 5
+4,六月,ろくがつ,LỤC NGUYỆT,tháng 6
+4,七月,しちがつ,THẤT NGUYỆT,tháng 7
+4,八月,はちがつ,BÁT NGUYỆT,tháng 8
+4,九月,くがつ,CỬU NGUYỆT,tháng 9
+4,十月,じゅうがつ,THẬP NGUYỆT,tháng 10
+4,十一月,じゅういちがつ,THẬP NHẤT NGUYỆT,tháng 11
+4,十二月,じゅうにがつ,THẬP NHỊ NGUYỆT,tháng 12
+4,何月,なんがつ,HÀ NGUYỆT,tháng mấy?
+4,～年,～ねん,NIÊN,năm～
+4,誕生日,たんじょうび,ĐẢN SINH NHẬT,sinh nhật
+4,生年月日,せいねんがっぴ,SINH NIÊN NGUYỆT NHẬT,ngày tháng năm sinh
+4,今,いま,KIM,bây giờ
+4,午前,ごぜん,NGỌ TIỀN,buổi sáng (AM)
+4,午後,ごご,NGỌ HẬU,buổi chiều (PM)
+4,朝,あさ,TRIỀU,buổi sáng
+4,昼,ひる,TRÚ,buổi trưa
+4,夜,よる,DẠ,buổi tối
+4,晩,ばん,VÃN,buổi tối
+4,今晩,こんばん,KIM VÃN,tối nay
+4,夕べ,ゆうべ,TỊCH べ,tối qua
+4,今朝,けさ,KIM TRIỀU,sáng nay
+4,今日,きょう,KIM NHẬT,hôm nay
+4,明日,あした,MINH NHẬT,ngày mai
+4,昨日,きのう,TẠC NHẬT,ngày hôm qua
+4,毎朝,まいあさ,MỖI TRIỀU,mỗi sáng
+4,毎晩,まいばん,MỖI VÃN,mỗi tối
+4,毎日,まいにち,MỖI NHẬT,mỗi ngày
+4,毎週,まいしゅう,MỖI CHU,mỗi tuần
+4,毎月,まいつき,MỖI NGUYỆT,mỗi tháng
+4,毎年,まいとし,MỖI NIÊN,mỗi năm
+4,今週,こんしゅう,KIM CHU,tuần này
+4,来週,らいしゅう,LAI CHU,tuần sau
+4,先週,せんしゅう,TIÊN CHU,tuần trước
+4,先々週,せんせんしゅう,TIÊN TIÊN CHU,tuần trước nữa
+4,今月,こんげつ,KIM NGUYỆT,tháng này
+4,来月,らいげつ,LAI NGUYỆT,tháng sau
+4,先月,せんげつ,TIÊN NGUYỆT,tháng trước
+4,先々月,せんせんげつ,TIÊN TIÊN NGUYỆT,tháng trước nữa
+4,今年,ことし,KIM NIÊN,năm nay
+4,来年,らいねん,LAI NIÊN,năm sau
+4,去年,きょねん,KHỨ NIÊN,năm ngoái
+4,一昨年,おととし,NHẤT TẠC NIÊN,năm kia
+4,週末,しゅうまつ,CHU MẠT,cuối tuần
+4,月末,げつまつ,NGUYỆT MẠT,cuối tháng
+4,年末,ねんまつ,NIÊN MẠT,cuối năm
+4,授業,じゅぎょう,THỤ NGHIỆP,giờ học
+4,昼休み,ひるやすみ,TRÚ HƯU み,nghỉ trưa
+4,試験,しけん,THÍ NGHIỆM,kỳ thi
+4,旅行,りょこう,LỮ HÀNH,chuyến du lịch
+4,会議,かいぎ,HỘI NGHỊ,cuộc họp
+4,出張,しゅっちょう,XUẤT TRƯƠNG,chuyến công tác
+4,夏休み,なつやすみ,HẠ HƯU み,nghỉ hè
+4,春休み,はるやすみ,XUÂN HƯU み,nghỉ xuân
+4,冬休み,ふゆやすみ,ĐÔNG HƯU み,nghỉ đông
+4,晴れ,はれ,TÌNH れ,trời đẹp
+4,雨,あめ,VŨ,trời mưa
+4,雪,ゆき,TUYẾT,tuyết
+5,広い,ひろい,QUẢNG い,rộng
+5,狭い,せまい,HIỆP い,hẹp
+5,明るい,あかるい,MINH るい,sáng
+5,暗い,くらい,ÁM い,tối
+5,高い,たかい,CAO い,mắc/cao
+5,安い,やすい,AN い,rẻ
+5,低い,ひくい,ĐÊ い,thấp
+5,長い,ながい,TRƯỜNG い,dài
+5,短い,みじかい,ĐOẢN い,ngắn
+5,大きい,おおきい,ĐẠI きい,lớn
+5,小さい,ちいさい,TIỂU さい,nhỏ
+5,新しい,あたらしい,TÂN しい,mới
+5,古い,ふるい,CỔ い,cũ
+5,重い,おもい,TRỌNG い,nặng
+5,軽い,かるい,KHINH い,nhẹ
+5,美味しい,おいしい,MỸ VỊ しい,ngon
+5,易しい,やさしい,DỊCH しい,dễ
+5,難しい,むずかしい,NAN しい,khó
+5,良い,よい,LƯƠNG い,tốt
+5,悪い,わるい,ÁC い,xấu
+5,楽しい,たのしい,LẠC しい,vui
+5,白い,しろい,BẠCH い,trắng
+5,黒い,くろい,HẮC い,đen
+5,青い,あおい,THANH い,xanh
+5,赤い,あかい,XÍCH い,đỏ
+5,暑い,あつい,THỬ い,nóng
+5,寒い,さむい,HÀN い,lạnh
+5,涼しい,すずしい,LƯƠNG しい,mát
+5,暖かい,あたたかい,NOÃN かい,ấm
+5,冷たい,つめたい,LÃNH たい,lạnh (đồ ăn)
+5,忙しい,いそがしい,MANG しい,bận rộn
+5,汚い,きたない,Ô い,dơ
+5,大人しい,おとなしい,ĐẠI NHÂN しい,trầm tính/ít nói
+5,辛い,からい,TÂN い,cay
+5,苦い,にがい,KHỔ い,đắng
+5,甘い,あまい,CAM い,ngọt
+5,熱心,ねっしん,NHIỆT TÂM,nhiệt tình
+5,元気,げんき,NGUYÊN KHÍ,khỏe mạnh
+5,親切,しんせつ,THÂN THIẾT,tử tế/tốt bụng
+5,有名,ゆうめい,HỮU DANH,nổi tiếng
+5,丈夫,じょうぶ,TRƯỢNG PHU,bền chắc
+5,大変,たいへん,ĐẠI BIẾN,vất vả
+5,不便,ふべん,BẤT TIỆN,bất tiện
+5,便利,べんり,TIỆN LỢI,tiện lợi
+5,静か,しずか,TĨNH か,yên tĩnh
+5,暇,ひま,HẠ,rảnh
+5,簡単,かんたん,GIẢN ĐƠN,đơn giản
+5,複雑,ふくざつ,PHỨC TẠP,phức tạp
+5,建物,たてもの,KIẾN VẬT,tòa nhà
+5,部屋,へや,BỘ ỐC,phòng
+5,所,ところ,SỞ,nơi/chỗ
+5,海,うみ,HẢI,biển
+5,花,はな,HOA,hoa
+5,桜,さくら,ANH,hoa anh đào
+5,町,まち,ĐINH,thành phố/thị trấn
+5,山,やま,SƠN,núi
+5,薬,くすり,DƯỢC,thuốc
+5,家,いえ,GIA,nhà
+5,田舎,いなか,ĐIỀN XÁ,quê
+5,富士山,ふじさん,PHÚ SĨ SƠN,núi Phú Sĩ
+5,宿題,しゅくだい,TÚC ĐỀ,bài tập
+5,授業,じゅぎょう,THỤ NGHIỆP,giờ học
+5,勉強,べんきょう,MIỄN CƯỜNG,việc học
+5,生活,せいかつ,SINH HOẠT,sinh hoạt
+5,料理,りょうり,LIỆU LÝ,món ăn
+5,映画,えいが,ÁNH HỌA,phim
+6,会う,あう,HỘI う,gặp
+6,買う,かう,MÃI う,mua
+6,吸う,すう,HẤP う,hút
+6,歌う,うたう,CA う,hát
+6,洗う,あらう,TẨY う,rửa
+6,習う,ならう,TẬP う,học
+6,行く,いく,HÀNH く,đi
+6,書く,かく,THƯ く,viết
+6,聞く,きく,VĂN く,nghe
+6,着く,つく,TRƯỚC く,đến
+6,置く,おく,TRÍ く,đặt/để
+6,働く,はたらく,ĐỘNG く,làm việc
+6,泳ぐ,およぐ,VỊNH ぐ,bơi
+6,話す,はなす,THOẠI す,nói chuyện
+6,待つ,まつ,ĐÃI つ,chờ/đợi
+6,死ぬ,しぬ,TỬ ぬ,chết
+6,呼ぶ,よぶ,HÔ ぶ,kêu/gọi
+6,運ぶ,はこぶ,VẬN ぶ,khiêng/vác
+6,飲む,のむ,ẨM む,uống
+6,読む,よむ,ĐỘC む,đọc
+6,休む,やすむ,HƯU む,nghỉ ngơi
+6,乗る,のる,THỪA る,lên xe
+6,終わる,おわる,CHUNG わる,kết thúc
+6,始まる,はじまる,THỦY まる,bắt đầu
+6,戻る,もどる,LỆ る,quay lại
+6,作る,つくる,TÁC る,nấu (món ăn)
+6,送る,おくる,TỐNG る,gửi (mail)
+6,帰る,かえる,QUY る,về
+6,入る,はいる,NHẬP る,vào
+6,切る,きる,THIẾT る,cắt
+6,食べる,たべる,THỰC べる,ăn
+6,寝る,ねる,TẨM る,ngủ
+6,教える,おしえる,GIÁO える,chỉ/dạy
+6,入れる,いれる,NHẬP れる,bỏ～vào
+6,起きる,おきる,KHỞI きる,thức dậy
+6,見る,みる,KIẾN る,xem
+6,浴びる,あびる,DỤC びる,tắm
+6,来る,くる,LAI る,đến
+7,日本語を 習う,にほんごを ならう,NHẬT BẢN NGỮ を TẬP う,học (tiếng Nhật)
+7,顔を 洗う,かおを あらう,NHAN を TẨY う,rửa (mặt)
+7,果物を 買う,くだものを かう,QUẢ VẬT を MÃI う,mua (trái cây)
+7,手紙を 書く,てがみを かく,THỦ CHỈ を THƯ く,viết (thư)
+7,音楽を 聞く,おんがくを きく,ÂM NHẠC を VĂN く,nghe (nhạc)
+7,日本語を 話す,にほんごを はなす,NHẬT BẢN NGỮ を THOẠI す,nói chuyện tiếng Nhật
+7,新聞を 読む,しんぶんを よむ,TÂN VĂN を ĐỘC む,đọc (báo)
+7,お茶を 飲む,おちゃを のむ,お TRÀ を ẨM む,uống (trà)
+7,料理を 作る,りょうりを つくる,LIỆU LÝ を TÁC る,nấu (món ăn)
+7,公園に 行く,こうえんに いく,CÔNG VIÊN に HÀNH く,đi (công viên)
+7,うちに 帰る,うちに かえる,うちに QUY る,về (nhà)
+7,部屋に 戻る,へやに もどる,BỘ ỐC に LỆ る,quay lại (phòng)
+7,日本語を 教える,にほんごを おしえる,NHẬT BẢN NGỮ を GIÁO える,chỉ/dạy (tiếng Nhật)
+7,ご飯を 食べる,ごはんを たべる,ご PHẠN を THỰC べる,ăn (cơm)
+7,テレビを 見る,テレビを みる,テレビを KIẾN る,xem (tivi)
+7,学校に 来る,がっこうに くる,HỌC HIỆU に LAI る,đến (trường)
+7,宿題を する,しゅくだいを する,TÚC ĐỀ を する,làm (bài tập)
+7,仕事を する,しごとを する,SĨ SỰ を する,làm (việc)
+7,勉強（を）する,べんきょう（を）する,MIỄN CƯỜNG （を）する,học tập
+7,練習（を）する,れんしゅう（を）する,LUYỆN TẬP （を）する,luyện tập
+7,相談（を）する,そうだん（を）する,TƯƠNG ĐÀM （を）する,trao đổi/bàn bạc
+7,留学（を）する,りゅうがく（を）する,LƯU HỌC （を）する,du học
+7,料理（を）する,りょうり（を）する,LIỆU LÝ （を）する,nấu món ăn
+7,食事（を）する,しょくじ（を）する,THỰC SỰ （を）する,dùng bữa
+7,買い物（を）する,かいもの（を）する,MÃI い VẬT （を）する,mua sắm
+7,散歩（を）する,さんぽ（を）する,TẢN BỘ （を）する,đi dạo
+7,掃除（を）する,そうじ（を）する,TẢO TRỪ （を）する,dọn dẹp
+7,洗濯（を）する,せんたく（を）する,TẨY TRẠC （を）する,giặt giũ
+7,運転（を）する,うんてん（を）する,VẬN CHUYỂN （を）する,lái xe
+7,運動（を）する,うんどう（を）する,VẬN ĐỘNG （を）する,tập thể dục
+7,旅行（を）する,りょこう（を）する,LỮ HÀNH （を）する,du lịch
+7,出張（を）する,しゅっちょう（を）する,XUẤT TRƯƠNG （を）する,đi công tác
+7,結婚（を）する,けっこん（を）する,KẾT HÔN （を）する,kết hôn
+7,ご飯,ごはん,ご PHẠN,cơm
+7,朝ご飯,あさごはん,TRIỀU ご PHẠN,cơm sáng
+7,昼ご飯,ひるごはん,TRÚ ご PHẠN,cơm trưa
+7,晩ご飯,ばんごはん,VÃN ご PHẠN,cơm tối
+7,野菜,やさい,DÃ THÁI,rau
+7,お茶,おちゃ,お TRÀ,trà
+7,牛乳,ぎゅうにゅう,NGƯU NHŨ,sữa bò
+7,小説,しょうせつ,TIỂU THUYẾT,tiểu thuyết
+7,日記,にっき,NHẬT KÝ,nhật ký
+7,音楽,おんがく,ÂM NHẠC,âm nhạc
+7,映画,えいが,ÁNH HỌA,phim
+7,作文,さくぶん,TÁC VĂN,tập làm văn
+7,実家,じっか,THỰC GIA,quê/nhà bố mẹ
+7,列車,れっしゃ,LIỆT XA,xe lửa
+7,電車,でんしゃ,ĐIỆN XA,xe điện
+7,水,みず,THỦY,nước
+7,お酒,おさけ,お TỬU,rượu
+7,歌,うた,CA,bài hát
+7,薬,くすり,DƯỢC,thuốc uống
+7,紙,かみ,CHỈ,giấy
+7,手紙,てがみ,THỦ CHỈ,lá thư
+7,切手,きって,THIẾT THỦ,tem
+7,田舎,いなか,ĐIỀN XÁ,quê/vùng quê
+7,家族,かぞく,GIA TỘC,gia đình (của tôi)
+7,ご家族,ごかぞく,ご GIA TỘC,gia đình (người khác)
+7,父,ちち,PHỤ,bố (của tôi)
+7,お父さん,おとうさん,お PHỤ さん,bố (người khác)
+7,母,はは,MẪU,mẹ (của tôi)
+7,お母さん,おかあさん,お MẪU さん,mẹ (người khác)
+7,兄,あに,HUYNH,anh trai (của tôi)
+7,お兄さん,おにいさん,お HUYNH さん,anh trai (người khác)
+7,姉,あね,TỶ,chị gái (của tôi)
+7,お姉さん,おねえさん,お TỶ さん,chị gái (người khác)
+7,弟,おとうと,ĐỆ,em trai (của tôi)
+7,弟さん,おとうとさん,ĐỆ さん,em trai (người khác)
+7,妹,いもうと,MUỘI,em gái (của tôi)
+7,妹さん,いもうとさん,MUỘI さん,em gái (người khác)
+7,子ども,こども,TỬ ども,con/con nít
+7,大人,おとな,ĐẠI NHÂN,người lớn
+7,赤ちゃん,あかちゃん,XÍCH ちゃん,em bé
+7,男の人,おとこのひと,NAM の NHÂN,người đàn ông
+7,女の人,おんなのひと,NỮ の NHÂN,người phụ nữ
+7,会社の人,かいしゃのひと,HỘI XÃ の NHÂN,người cùng công ty
+7,恋人,こいびと,LUYẾN NHÂN,người yêu
+7,友だち,ともだち,HỮU だち,bạn bè
+7,親友,しんゆう,THÂN HỮU,bạn thân
+7,一人で,ひとりで,NHẤT NHÂN で,một mình

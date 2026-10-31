@@ -167,6 +167,26 @@ def test_write_kanji_reveals_character(sample_n5, run):
     assert "Kết quả: 1/1" in out
 
 
+def test_write_kanji_hint(data_dir, run):
+    from conftest import write_csv
+    write_csv(data_dir / "N5" / "kanji.csv", ["lesson", "kanji", "hanviet", "meaning_vi", "parts"], [
+        ["1", "門", "MÔN", "cổng"],
+        ["1", "日", "NHẬT", "ngày"],
+        ["2", "間", "GIAN", "không gian", "門+日"],
+    ])
+    code, out = run(["-t", "2", "-b", "2", "--mode", "vj"], ["?", "間"])
+    hint = out.split("Gợi ý: ")[1].split("\n")[0]
+    assert hint == "MÔN (cổng) + NHẬT (ngày)"
+    assert "✓ Đúng!" in out
+    assert "= 門 MÔN (cổng) + 日 NHẬT (ngày)" in out
+
+
+def test_write_kanji_hint_without_parts(sample_n5, run):
+    code, out = run(["-t", "2", "-b", "1", "--mode", "vj"], ["?", "学"])
+    assert "Chưa có gợi ý" in out
+    assert "✓ Đúng!" in out
+
+
 @pytest.mark.parametrize("category", ["1", "3", "4"])
 @pytest.mark.parametrize("choice, prompt", [
     ("1", "Nghĩa tiếng Việt"),
@@ -175,9 +195,41 @@ def test_write_kanji_reveals_character(sample_n5, run):
 def test_study_mode_menu_for_vocab_categories(sample_n5, run, category, choice, prompt):
     code, out = run(["-b", "2" if category == "1" else "10"], [category, choice, ":q"])
     assert "Cách học kanji đơn:" not in out
-    assert "Cách học:" in out
     assert "2. Nhìn nghĩa tiếng Việt → viết tiếng Nhật" in out
+    assert ("4. Nhìn hiragana → viết kanji" in out) == (category == "3")
     assert prompt in out
+
+
+def test_kana_to_kanji_typed(sample_n5, run):
+    code, out = run(["-t", "3", "-b", "10", "--mode", "kj"], ["水"])
+    assert "Hiragana → Kanji" in out
+    assert "みず" in out
+    assert "✓ Đúng!" in out
+
+
+def test_kana_to_kanji_hint_shows_hanviet(sample_n5, run):
+    code, out = run(["-t", "3", "-b", "10", "--mode", "kj"], ["?", "", "y"])
+    assert "Gợi ý: THỦY" in out
+    assert "Kết quả: 1/1" in out
+
+
+def test_kana_to_kanji_from_menu(sample_n5, run):
+    code, out = run(["-t", "3", "-b", "10"], ["4", "水"])
+    assert "Cách học từ vựng kanji:" in out
+    assert "Hiragana → Kanji" in out
+    assert "✓ Đúng!" in out
+
+
+@pytest.mark.parametrize("answer, ok", [("みず", True), ("mizu", True), ("水", False)])
+def test_kanji_to_kana(sample_n5, run, answer, ok):
+    code, out = run(["-t", "3", "-b", "10", "--mode", "jk"], [answer, "n"])
+    assert "Kanji → Hiragana" in out
+    assert ("✓ Đúng!" in out) == ok
+
+
+def test_kana_kanji_mode_falls_back_for_words_without_kanji(sample_n5, run):
+    code, out = run(["-t", "1", "-b", "1", "--mode", "kmix", "-n", "1"], [":q"])
+    assert "Hiragana → Kanji" not in out and "Kanji → Hiragana" not in out
 
 
 def test_study_mode_menu_skipped_when_mode_given(sample_n5, run):

@@ -91,7 +91,7 @@ Từ trả lời sai sẽ được hỏi lại thêm một lần trong cùng lư
 |---|---|
 | `-b`, `--lesson` | chọn bài (với kanji đơn là trang): `3`, `1-5`, `1,3,7`, `all` |
 | `-l`, `--level` | chọn cấp độ, ví dụ `N4` (mặc định tự chọn nếu chỉ có một cấp) |
-| `--mode` | `vj` Việt→Nhật (nhìn nghĩa, viết tiếng Nhật), `jv` Nhật→Việt, `mix` trộn ngẫu nhiên. Bỏ trống thì tool hỏi bằng menu "Cách học" sau khi chọn loại thẻ |
+| `--mode` | `vj` Việt→Nhật (nhìn nghĩa, viết tiếng Nhật), `jv` Nhật→Việt, `mix` trộn ngẫu nhiên. Riêng từ vựng kanji còn có `kj` nhìn hiragana → viết kanji ra giấy (gõ `?` để xem âm Hán Việt), `jk` nhìn kanji → gõ cách đọc (hiragana/romaji), `kmix` trộn `kj`/`jk`. Bỏ trống thì tool hỏi bằng menu "Cách học" sau khi chọn loại thẻ |
 | `--script` | từ vựng kanji hiện bằng `kanji` (mặc định), `kana`, hoặc `mix` |
 | `-t`, `--kind` | loại thẻ: `1` từ vựng, `2` kanji đơn, `3` từ vựng kanji, `4` tất cả (hoặc `hiragana`, `katakana` để lọc riêng) |
 | `--no-big` | không vẽ chữ kanji cỡ lớn |
@@ -155,6 +155,16 @@ lesson,kanji,hanviet,meaning_vi
 1,先,TIÊN,trước
 1,生,SINH,sống/sinh ra
 ```
+
+Cột `parts` (tùy chọn, có thể bỏ trống) ghi các phần cấu thành chữ, ngăn bằng `+`. Khi học "Nhìn âm Hán Việt → viết chữ kanji", gõ `?` để xem gợi ý này. Ưu tiên gợi ý ít và dễ: chữ ghép từ hai chữ quen thì chỉ ghi hai chữ đó, chữ tượng hình cơ bản thì bỏ trống. Gợi ý chỉ hiện âm Hán Việt và nghĩa của từng phần, không hiện chữ (chữ chỉ hiện cùng đáp án). Tên và nghĩa được tra tự động trong `kanji.csv`. Phần nào chưa có trong file, hoặc cần nghĩa khác, thì ghi trong ngoặc dạng `(TÊN: nghĩa)`. Nét không có tên thì bỏ trống tên: `丷(: hai chấm)`.
+
+```csv
+lesson,kanji,hanviet,meaning_vi,parts
+9,間,GIAN,không gian,門+日
+9,題,ĐỀ,vấn đề,是(THỊ: phải/đúng)+頁
+```
+
+Khi gõ `?` ở chữ 題 sẽ hiện: `THỊ (phải/đúng) + BỘ HIỆT (đầu)`.
 
 Mỗi bài liệt kê đủ các chữ kanji dùng trong kanji-vocab của bài đó, kể cả chữ đã có ở bài trước. Test sẽ báo nếu thiếu chữ nào.
 

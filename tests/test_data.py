@@ -19,6 +19,27 @@ def test_list_levels_without_data_dir(data_dir):
     assert vocab.list_levels() == []
 
 
+def test_parse_parts():
+    assert vocab.parse_parts("門+是(THỊ: phải/đúng)") == [("門", "", ""), ("是", "THỊ", "phải/đúng")]
+    assert vocab.parse_parts(" 雨 + 丷(: hai chấm) ") == [("雨", "", ""), ("丷", "", "hai chấm")]
+    assert vocab.parse_parts("开(KHAI)") == [("开", "KHAI", "")]
+    assert vocab.parse_parts("") == []
+
+
+def test_kanji_parts_look_up_hanviet(data_dir):
+    write_csv(data_dir / "N5" / "kanji.csv", ["lesson", "kanji", "hanviet", "meaning_vi", "parts"], [
+        ["1", "頁", "BỘ HIỆT", "bộ thủ (đầu)"],
+        ["1", "日", "NHẬT", "ngày"],
+        ["1", "門", "MÔN", "cổng"],
+        ["2", "間", "GIAN", "không gian", "門+日"],
+        ["2", "題", "ĐỀ", "vấn đề", "是(THỊ: phải/đúng)+頁"],
+    ])
+    words = by_key(vocab.load_level("N5"))
+    assert words["字|間"].parts == [("門", "MÔN", "cổng"), ("日", "NHẬT", "ngày")]
+    assert words["字|題"].parts == [("是", "THỊ", "phải/đúng"), ("頁", "BỘ HIỆT", "đầu")]
+    assert words["字|門"].parts == []
+
+
 def test_load_level_reads_all_files(sample_n5):
     words = by_key(vocab.load_level("N5"))
     assert len(words) == 9

@@ -1,4 +1,4 @@
-lesson,kanji,hanviet,meaning_vi
+lesson,kanji,hanviet,meaning_vi,parts
 1,一,NHẤT,một
 1,二,NHỊ,hai
 1,三,TAM,ba
@@ -128,6 +128,7 @@ lesson,kanji,hanviet,meaning_vi
 1,便,TIỆN,tiện lợi
 1,借,TÁ,vay/mượn
 1,働,ĐỘNG,lao động
+1,僚,LIÊU,đồng liêu (đồng nghiệp)
 1,儿,NHÂN ĐI,bộ thủ (người)
 1,元,NGUYÊN,nguồn gốc
 1,兄,HUYNH,anh trai
@@ -435,90 +436,93 @@ lesson,kanji,hanviet,meaning_vi
 7,箱,TƯƠNG,cái hộp
 7,糸,BỘ TY,sợi tơ
 7,約,ƯỚC,giao ước
-8,紙,CHỈ,tờ giấy
-8,経,KINH,kinh tế
-8,終,CHUNG,chung kết
-8,紹,THIỆU,giới thiệu
-8,結,KẾT,kết hôn
-8,練,LUYỆN,luyện tập
-8,緒,TỰ,cùng nhau
+8,紙,CHỈ,tờ giấy,糸+氏
+8,経,KINH,kinh tế,糸+又+土
+8,終,CHUNG,chung kết,糸+冬
+8,紹,THIỆU,giới thiệu,糸+刀+口
+8,結,KẾT,kết hôn,糸+士+口
+8,練,LUYỆN,luyện tập,糸+東
+8,緒,TỰ,cùng nhau,糸+者
 8,羊,DƯƠNG,con cừu
-8,着,TRƯỚC,mặc
+8,着,TRƯỚC,mặc,羊+目
 8,羽,VŨ,cánh
-8,習,TẬP,học tập
+8,習,TẬP,học tập,羽+白
 8,耂,BỘ LÃO,bộ thủ (già)
-8,考,KHẢO,suy nghĩ
-8,者,GIẢ,tác giả
+8,考,KHẢO,suy nghĩ,耂+丂(: nét gập giống số 5)
+8,者,GIẢ,tác giả,耂+日
 8,耳,NHĨ,tai
-8,聞,VĂN,nghe/hỏi
+8,聞,VĂN,nghe/hỏi,門+耳
 8,肉,NHỤC,thịt
 8,自,TỰ,tự mình
-8,舎,XÁ,cư xá
+8,舎,XÁ,cư xá,人+土+口
 8,良,LƯƠNG,tốt
-8,色,SẮC,màu sắc
-8,行,HÀNH,đi
+8,色,SẮC,màu sắc,ク(: hình chữ ク katakana)+巴(BA: con trăn)
+8,行,HÀNH,đi,彳+亍(XÚC: bước chân phải)
 8,西,TÂY,phía Tây
-8,要,YẾU,cần thiết
-8,見,KIẾN,xem/nhìn
-8,親,THÂN,thân thiết
+8,要,YẾU,cần thiết,西+女
+8,見,KIẾN,xem/nhìn,目+儿
+8,親,THÂN,thân thiết,立+木+見
 8,言,NGÔN,lời nói
-8,計,KẾ,kế hoạch
-8,記,KÝ,ghi chép
-8,証,CHỨNG,chứng nhận
-8,試,THÍ,thí nghiệm
-8,話,THOẠI,nói chuyện
-8,語,NGỮ,tiếng
-8,誌,CHÍ,tạp chí
-8,説,THUYẾT,thuyết minh
-8,読,ĐỘC,đọc
+8,計,KẾ,kế hoạch,言+十
+8,記,KÝ,ghi chép,言+己
+8,証,CHỨNG,chứng nhận,言+正
+8,試,THÍ,thí nghiệm,言+式
+8,話,THOẠI,nói chuyện,言+舌
+8,語,NGỮ,tiếng,言+五+口
+8,誌,CHÍ,tạp chí,言+士+心
+8,説,THUYẾT,thuyết minh,言+丷(: hai chấm)+兄
+8,読,ĐỘC,đọc,言+売
 8,貝,BỐI,con sò
-8,財,TÀI,tài sản
-8,買,MÃI,mua
-8,貸,THẢI,cho vay/cho mượn
-8,赤,XÍCH,đỏ
-8,走,TẨU,chạy
-8,起,KHỞI,khởi đầu/thức dậy
+8,財,TÀI,tài sản,貝+才
+8,買,MÃI,mua,罒(BỘ VÕNG: cái lưới)+貝
+8,貸,THẢI,cho vay/cho mượn,代(ĐẠI: thay thế)+貝
+8,赤,XÍCH,đỏ,土+小(: hình chữ TIỂU dang chân)
+8,走,TẨU,chạy,土+龰(: phần dưới chữ TÚC - chân)
+8,起,KHỞI,khởi đầu/thức dậy,走+己
 8,足,TÚC,chân
+8,身,THÂN,thân thể
 8,車,XA,xe hơi
-8,転,CHUYỂN,chuyển động
-8,軽,KHINH,nhẹ
-8,辛,TÂN,cay
-8,辞,TỪ,từ điển
+8,転,CHUYỂN,chuyển động,車+云(VÂN: mây)
+8,軽,KHINH,nhẹ,車+又+土
+8,辛,TÂN,cay,立+十
+8,辞,TỪ,từ điển,舌+辛
 8,酉,BỘ DẬU,bộ thủ (rượu)
-9,酒,TỬU,rượu
-9,配,PHỐI,phân phối
-9,重,TRỌNG,nặng
-9,金,KIM,vàng/tiền
-9,銀,NGÂN,bạc/ngân hàng
+9,酒,TỬU,rượu,氵+酉
+9,配,PHỐI,phân phối,酉+己
+9,重,TRỌNG,nặng,千+里(LÝ: làng)
+9,金,KIM,vàng/tiền,人+王+丷(: hai chấm)
+9,銀,NGÂN,bạc/ngân hàng,金+艮(CẤN: bền cứng)
 9,長,TRƯỜNG,dài
 9,門,MÔN,cổng
-9,閉,BẾ,đóng
-9,開,KHAI,mở
-9,間,GIAN,không gian
+9,閉,BẾ,đóng,門+才
+9,開,KHAI,mở,門+开(: hai tay đẩy ra)
+9,間,GIAN,không gian,門+日
 9,隹,BỘ CHUY,bộ thủ (chim đuôi ngắn)
-9,雑,TẠP,tạp chí
-9,難,NAN,khó
+9,雑,TẠP,tạp chí,九+木+隹
+9,難,NAN,khó,艹+口+夫+隹
 9,雨,VŨ,mưa
-9,雪,TUYẾT,tuyết
-9,電,ĐIỆN,điện thoại
-9,青,THANH,xanh
-9,静,TĨNH,yên tĩnh
-9,音,ÂM,âm thanh
+9,雪,TUYẾT,tuyết,雨+ヨ(: hình chữ ヨ katakana)
+9,電,ĐIỆN,điện thoại,雨+田+乚(: nét móc)
+9,青,THANH,xanh,龶(: giống chữ SINH thiếu nét)+月
+9,静,TỊNH,yên tĩnh,青+争(TRANH: tranh giành)
+9,音,ÂM,âm thanh,立+日
 9,頁,BỘ HIỆT,bộ thủ (đầu)
-9,頭,ĐẦU,đầu
-9,顔,NHAN,mặt
-9,題,ĐỀ,vấn đề
-9,風,PHONG,gió
-9,食,THỰC,ăn
+9,頭,ĐẦU,đầu,豆+頁
+9,顔,NHAN,mặt,立+厂(BỘ HÁN: sườn núi)+彡+頁
+9,題,ĐỀ,vấn đề,是(THỊ: phải/đúng)+頁
+9,風,PHONG,gió,几(KỶ: cái ghế nhỏ)+虫(TRÙNG: sâu bọ)
+9,食,THỰC,ăn,人+良
 9,飠,BỘ THỰC,bộ thủ (ăn)
-9,飲,ẨM,uống
-9,飯,PHẠN,cơm
-9,館,QUÁN,đại sứ quán
-9,首,THỦ,cái cổ/thủ tướng
+9,飲,ẨM,uống,飠+欠
+9,飯,PHẠN,cơm,飠+反
+9,館,QUÁN,đại sứ quán,飠+官(QUAN: quan chức)
+9,首,THỦ,cái cổ/thủ tướng,丷(: hai chấm)+一+自
 9,馬,MÃ,ngựa
-9,駅,DỊCH,nhà ga
-9,験,NGHIỆM,thí nghiệm
-9,高,CAO,cao/đắt
-9,魚,NGƯ,cá
+9,駅,DỊCH,nhà ga,馬+尺(XÍCH: thước đo)
+9,験,NGHIỆM,thí nghiệm,馬+㑒(: phần bên phải chữ KIỂM - kiểm tra)
+9,高,CAO,cao/đắt,亠(BỘ ĐẦU: cái nắp)+口+冂(BỘ QUYNH: vùng biên giới)+口
+9,魚,NGƯ,cá,ク(: hình chữ ク katakana)+田+灬
 9,鳥,ĐIỂU,chim
-9,黒,HẮC,đen
+9,黒,HẮC,đen,里(LÝ: làng)+灬
+9,蔵,TÀNG,nhà kho,艹+戈(QUA: cây giáo)+臣(THẦN: bề tôi)
+9,庫,KHỐ,kho,广+車
