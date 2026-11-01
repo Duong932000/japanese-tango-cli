@@ -393,3 +393,202 @@ lesson,kanji,kana,hanviet,meaning_vi
 7,友だち,ともだち,HỮU だち,bạn bè
 7,親友,しんゆう,THÂN HỮU,bạn thân
 7,一人で,ひとりで,NHẤT NHÂN で,một mình
+9,写真を とる,しゃしんを とる,TẢ CHÂN を とる,chụp ảnh
+9,暑い,あつい,THỬ い,nóng
+9,寒い,さむい,HÀN い,lạnh
+9,涼しい,すずしい,LƯƠNG しい,mát
+9,忙しい,いそがしい,MANG しい,bận rộn
+9,暖かい,あたたかい,NOÃN かい,ấm
+9,暇,ひま,HẠ,rảnh
+9,簡単,かんたん,GIẢN ĐƠN,đơn giản
+9,複雑,ふくざつ,PHỨC TẠP,phức tạp
+9,今週,こんしゅう,KIM CHU,tuần này
+9,来週,らいしゅう,LAI CHU,tuần sau
+9,再来週,さらいしゅう,TÁI LAI CHU,tuần sau nữa
+9,先週,せんしゅう,TIÊN CHU,tuần trước
+9,先々週,せんせんしゅう,TIÊN TIÊN CHU,tuần trước nữa
+9,昔,むかし,TÍCH,ngày xưa
+9,天気,てんき,THIÊN KHÍ,thời tiết
+9,この辺,このへん,この BIÊN,vùng này/khu vực
+9,赤ちゃん,あかちゃん,XÍCH ちゃん,em bé
+9,一緒,いっしょ,NHẤT TỰ,cùng nhau
+9,大人,おとな,ĐẠI NHÂN,người lớn
+9,休み,やすみ,HƯU み,ngày nghỉ/kỳ nghỉ
+9,切符,きっぷ,THIẾT PHÙ,vé
+9,花見,はなみ,HOA KIẾN,việc ngắm hoa
+9,テスト,bài kiểm tra
+9,パーティー,buổi tiệc
+9,レストラン,nhà hàng
+9,カラオケ,karaoke
+10,歯を みがく,はを みがく,XỈ を みがく,đánh răng
+10,お金が かかる,おかねが かかる,お KIM が かかる,tốn/mất (tiền)
+10,会議が 始まる,かいぎが はじまる,HỘI NGHỊ が THỦY まる,bắt đầu (cuộc họp)
+10,仕事が 終わる,しごとが おわる,SĨ SỰ が CHUNG わる,kết thúc (công việc)
+10,毎朝,まいあさ,MỖI TRIỀU,mỗi sáng
+10,毎晩,まいばん,MỖI VÃN,mỗi tối
+10,毎日,まいにち,MỖI NHẬT,mỗi ngày
+10,毎週,まいしゅう,MỖI CHU,mỗi tuần
+10,毎月,まいつき,MỖI NGUYỆT,mỗi tháng
+10,毎年,まいとし,MỖI NIÊN,mỗi năm
+10,お正月,おしょうがつ,お CHÍNH NGUYỆT,Tết
+10,春,はる,XUÂN,mùa xuân
+10,夏,なつ,HẠ,mùa hạ
+10,秋,あき,THU,mùa thu
+10,冬,ふゆ,ĐÔNG,mùa đông
+10,春休み,はるやすみ,XUÂN HƯU み,kỳ nghỉ xuân
+10,夏休み,なつやすみ,HẠ HƯU み,kỳ nghỉ hè
+10,冬休み,ふゆやすみ,ĐÔNG HƯU み,kỳ nghỉ đông
+10,昼休み,ひるやすみ,TRÚ HƯU み,việc nghỉ trưa
+10,～回,～かい,HỒI,lần
+10,両親,りょうしん,LƯỠNG THÂN,bố mẹ
+10,父,ちち,PHỤ,bố (của tôi)
+10,お父さん,おとうさん,お PHỤ さん,bố (người khác)
+10,母,はは,MẪU,mẹ (của tôi)
+10,お母さん,おかあさん,お MẪU さん,mẹ (người khác)
+10,兄,あに,HUYNH,anh trai (của tôi)
+10,お兄さん,おにいさん,お HUYNH さん,anh trai (người khác)
+10,姉,あね,TỶ,chị gái (của tôi)
+10,お姉さん,おねえさん,お TỶ さん,chị gái (người khác)
+10,弟,おとうと,ĐỆ,em trai (của tôi)
+10,弟さん,おとうとさん,ĐỆ さん,em trai (người khác)
+10,妹,いもうと,MUỘI,em gái (của tôi)
+10,妹さん,いもうとさん,MUỘI さん,em gái (người khác)
+10,親友,しんゆう,THÂN HỮU,bạn thân
+10,疲れる,つかれる,BÌ れる,mệt
+10,お祭り,おまつり,お TẾ り,lễ hội
+10,グラブ,xe Grab
+10,アルバイト,việc làm thêm
+10,バドミントン,cầu lông
+10,ジム,phòng gym
+11,先生に 聞く,せんせいに きく,TIÊN SINH に VĂN く,hỏi (giáo viên)
+11,妹に 教える,いもうとに おしえる,MUỘI に GIÁO える,dạy (cho em gái)
+11,母に 書く,ははに かく,MẪU に THƯ く,viết (cho mẹ)
+11,兄に 貸す,あにに かす,HUYNH に THẢI す,cho mượn (anh trai)
+11,先生に 出す,せんせいに だす,TIÊN SINH に XUẤT す,nộp (cho thầy)
+11,友達に 返す,ともだちに かえす,HỮU ĐẠT に PHẢN す,trả lại (cho bạn)
+11,お客に 送る,おきゃくに おくる,お KHÁCH に TỐNG る,gửi (cho khách)
+11,弟に 見せる,おとうとに みせる,ĐỆ に KIẾN せる,cho xem (em trai)
+11,姉に 電話を かける,あねに でんわを かける,TỶ に ĐIỆN THOẠI を かける,gọi điện thoại (cho chị)
+11,友達から 聞く,ともだちから きく,HỮU ĐẠT から VĂN く,nghe (từ bạn bè)
+11,先生から 習う,せんせいから ならう,TIÊN SINH から TẬP う,học (từ thầy)
+11,友達から 借りる,ともだちから かりる,HỮU ĐẠT から TÁ りる,mượn/vay/thuê (từ bạn)
+11,恋人から もらう,こいびとから もらう,LUYẾN NHÂN から もらう,nhận (từ người yêu)
+11,教室に 入る,きょうしつに はいる,GIÁO THẤT に NHẬP る,vào (lớp học)
+11,山に 登る,やまに のぼる,SƠN に ĐĂNG る,leo (núi)
+11,バスに 乗る,バスに のる,バスに THỪA る,lên (xe)/cưỡi (ngựa)
+11,空港に 着く,くうこうに つく,KHÔNG CẢNG に TRƯỚC く,đến (sân bay)
+11,家を 出る,いえを でる,GIA を XUẤT る,ra khỏi (nhà)
+11,バスを 降りる,バスを おりる,バスを GIÁNG りる,xuống (xe)
+11,大学を 卒業する,だいがくを そつぎょうする,ĐẠI HỌC を TỐT NGHIỆP する,tốt nghiệp (đại học)
+11,空港を 出発する,くうこうを しゅっぱつする,KHÔNG CẢNG を XUẤT PHÁT する,xuất phát/rời (sân bay)
+11,言葉,ことば,NGÔN DIỆP,từ vựng
+11,意味,いみ,Ý VỊ,ý nghĩa
+11,お金,おかね,お KIM,tiền
+11,部長,ぶちょう,BỘ TRƯỞNG,trưởng phòng
+11,課長,かちょう,KHÓA TRƯỞNG,tổ trưởng
+11,お風呂,おふろ,お PHONG LỮ,bồn tắm
+11,話,はなし,THOẠI,câu chuyện
+11,空,そら,KHÔNG,bầu trời
+11,道路,どうろ,ĐẠO LỘ,con đường
+11,道,みち,ĐẠO,con đường
+11,橋,はし,KIỀU,cây cầu
+11,公園,こうえん,CÔNG VIÊN,công viên
+11,庭,にわ,ĐÌNH,sân/sân vườn
+11,東京,とうきょう,ĐÔNG KINH,Tokyo
+11,入口,いりぐち,NHẬP KHẨU,lối vào
+11,出口,でぐち,XUẤT KHẨU,lối ra
+11,各駅,かくえき,CÁC DỊCH,mỗi ga
+11,空を とぶ,そらを とぶ,KHÔNG を とぶ,bay (trên bầu trời)
+11,道路を 走る,どうろを はしる,ĐẠO LỘ を TẨU る,chạy (trên đường)
+11,庭を 散歩する,にわを さんぽする,ĐÌNH を TẢN BỘ する,đi dạo (trong vườn)
+11,東京を 旅行する,とうきょうを りょこうする,ĐÔNG KINH を LỮ HÀNH する,đi du lịch (Tokyo)
+11,公園を 歩く,こうえんを あるく,CÔNG VIÊN を BỘ く,đi bộ (trong công viên)
+11,はしを 渡る,はしを わたる,はしを ĐỘ る,băng qua (cầu)
+11,道を 通る,みちを とおる,ĐẠO を THÔNG る,đi qua (đường)
+11,入口に 立つ,いりぐちに たつ,NHẬP KHẨU に LẬP つ,đứng (ở lối vào)
+11,あそこに 座る,あそこに すわる,あそこに TỌA る,ngồi (ở đằng kia)
+11,ホテルに 泊まる,ホテルに とまる,ホテルに BẠC まる,trọ/ngủ lại (khách sạn)
+11,かくえきに 止まる,かくえきに とまる,かくえきに CHỈ まる,dừng/đậu (mỗi ga)
+11,冷蔵庫に 入れる,れいぞうこに いれる,LÃNH TÀNG KHỐ に NHẬP れる,cho vào (tủ lạnh)
+11,机に 置く,つくえに おく,KỶ に TRÍ く,đặt/để (lên bàn)
+11,筆箱に 貼る,ふでばこに はる,BÚT TƯƠNG に THIẾP る,dán (vào hộp bút)
+11,壁に カレンダーを かける,かべに カレンダーを かける,BÍCH に カレンダーを かける,treo lịch (lên tường)
+11,黒板に 書く,こくばんに かく,HẮC BẢN に THƯ く,viết tên (lên bảng đen)
+11,祖父に 質問する,そふに しつもんする,TỔ PHỤ に CHẤT VẤN する,hỏi (ông)
+11,質問に 答える,しつもんに こたえる,CHẤT VẤN に ĐÁP える,trả lời (câu hỏi)
+11,親友と 試合を する,しんゆうと しあいを する,THÂN HỮU と THÍ HỢP を する,thi đấu (với bạn thân)
+11,彼と 結婚する,かれと けっこんする,BỈ と KẾT HÔN する,kết hôn (với anh ấy)
+11,イギリスと 戦争する,イギリスと せんそうする,イギリスと CHIẾN TRANH する,chiến tranh (với Anh)
+11,彼女と 別れる,かのじょと わかれる,BỈ NỮ と BIỆT れる,chia tay/chia cách (với cô ấy)
+11,兄,あに,HUYNH,anh trai (của tôi)
+11,お兄さん,おにいさん,お HUYNH さん,anh trai (người khác)
+11,姉,あね,TỶ,chị gái (của tôi)
+11,お姉さん,おねえさん,お TỶ さん,chị gái (người khác)
+11,弟,おとうと,ĐỆ,em trai (của tôi)
+11,弟さん,おとうとさん,ĐỆ さん,em trai (người khác)
+11,妹,いもうと,MUỘI,em gái (của tôi)
+11,妹さん,いもうとさん,MUỘI さん,em gái (người khác)
+11,子ども,こども,TỬ ども,con/con nít
+11,大人,おとな,ĐẠI NHÂN,người lớn
+11,赤ちゃん,あかちゃん,XÍCH ちゃん,em bé
+11,男の人,おとこのひと,NAM の NHÂN,người đàn ông
+11,女の人,おんなのひと,NỮ の NHÂN,người phụ nữ
+11,会社の人,かいしゃのひと,HỘI XÃ の NHÂN,người cùng công ty
+11,恋人,こいびと,LUYẾN NHÂN,người yêu
+11,友だち,ともだち,HỮU だち,bạn bè
+11,親友,しんゆう,THÂN HỮU,bạn thân
+11,一人で,ひとりで,NHẤT NHÂN で,một mình
+12,上,うえ,THƯỢNG,trên
+12,下,した,HẠ,dưới
+12,前,まえ,TIỀN,trước
+12,後ろ,うしろ,HẬU ろ,phía sau
+12,右,みぎ,HỮU,bên phải
+12,左,ひだり,TẢ,bên trái
+12,中,なか,TRUNG,bên trong
+12,外,そと,NGOẠI,bên ngoài
+12,間,あいだ,GIAN,ở giữa
+12,周り,まわり,CHU り,xung quanh
+12,向こう,むこう,HƯỚNG こう,phía bên kia
+12,向かい,むかい,HƯỚNG かい,phía đối diện
+12,近く,ちかく,CẬN く,gần/chỗ gần
+12,遠く,とおく,VIỄN く,phía xa/đằng xa
+12,猫,ねこ,MIÊU,mèo
+12,犬,いぬ,KHUYỂN,chó
+12,鳥,とり,ĐIỂU,chim
+12,小鳥,ことり,TIỂU ĐIỂU,chim nhỏ
+12,魚,さかな,NGƯ,cá
+12,馬,うま,MÃ,ngựa
+12,牛,うし,NGƯU,bò
+12,枝,えだ,CHI,cành cây
+12,本棚,ほんだな,BẢN BẰNG,kệ sách
+12,引き出し,ひきだし,DẪN き XUẤT し,ngăn kéo
+12,箱,はこ,TƯƠNG,cái hộp
+12,門,もん,MÔN,cái cổng
+12,絵,え,HỘI,bức tranh
+12,会場,かいじょう,HỘI TRƯỜNG,hội trường
+12,屋上,おくじょう,ỐC THƯỢNG,sân thượng
+12,運動場,うんどうじょう,VẬN ĐỘNG TRƯỜNG,sân vận động
+12,火事,かじ,HỎA SỰ,hỏa hoạn
+12,交通,こうつう,GIAO THÔNG,giao thông
+12,事故,じこ,SỰ CỐ,tai nạn/sự cố
+12,交通事故,こうつうじこ,GIAO THÔNG SỰ CỐ,tai nạn giao thông
+12,運動会,うんどうかい,VẬN ĐỘNG HỘI,hội thao
+12,試合,しあい,THÍ HỢP,trận đấu
+12,試験,しけん,THÍ NGHIỆM,kỳ thi
+12,信号,しんごう,TÍN HIỆU,đèn giao thông
+12,結婚式,けっこんしき,KẾT HÔN THỨC,lễ kết hôn
+12,入学式,にゅうがくしき,NHẬP HỌC THỨC,lễ nhập học
+12,卒業式,そつぎょうしき,TỐT NGHIỆP THỨC,lễ tốt nghiệp
+12,花火大会,はなびたいかい,HOA HỎA ĐẠI HỘI,đại hội pháo hoa
+12,お祭り,おまつり,お TẾ り,lễ hội
+12,となり,bên cạnh/sát bên
+12,よこ,bên cạnh/bên hông
+12,そば,bên cạnh
+12,にわとり,gà
+12,かめ,rùa
+12,ぞう,voi
+12,ねずみ,chuột
+12,かに,cua
+12,うさぎ,thỏ
+12,たんす,tủ quần áo
+12,やね,mái nhà

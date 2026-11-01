@@ -566,9 +566,13 @@ def ask(word, direction, script, dup_kana, header):
             ans = read_with_hint("Viết chữ kanji ra giấy rồi bấm Enter (hoặc gõ chữ, ? = gợi ý): ",
                                  lambda: show_hint(word))
         else:
-            hint = dim(f"  ({word.hanviet})") if word.hanviet else ""
-            print("    " + bold(yellow(word.meaning)) + hint + "\n")
-            ans = read("Tiếng Nhật (kana / kanji / romaji): ")
+            # Không hiện âm Hán Việt ở đề bài vì dễ lộ đáp án (あの PHƯƠNG → あの方); gõ ? để xem.
+            print("    " + bold(yellow(word.meaning)) + "\n")
+            if word.hanviet:
+                ans = read_with_hint("Tiếng Nhật (kana / kanji / romaji, ? = âm Hán Việt): ",
+                                     lambda: show_hanviet_hint(word))
+            else:
+                ans = read("Tiếng Nhật (kana / kanji / romaji): ")
     if ans is None or ans.strip() == ":q":
         return None
     ans = ans.strip()

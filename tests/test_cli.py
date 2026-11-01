@@ -78,6 +78,14 @@ def test_typed_answer_is_checked(sample_n5, run):
     assert saved_progress()["words"]["水|みず"]["box"] == 1
 
 
+def test_meaning_to_japanese_hides_hanviet(sample_n5, run):
+    code, out = run(["-b", "10", "--kind", "kanji-vocab", "--mode", "vj"], ["?", "mizu"])
+    question = out.split("Tiếng Nhật (kana / kanji / romaji")[0]
+    assert "nước" in question and "THỦY" not in question
+    assert "Gợi ý: THỦY" in out
+    assert "✓ Đúng!" in out
+
+
 def test_wrong_answer_is_asked_again(sample_n5, run):
     code, out = run(["-b", "10", "--kind", "kanji-vocab", "--mode", "vj"], ["sai", "n", "mizu"])
     assert "✗ Chưa đúng." in out
@@ -190,7 +198,7 @@ def test_write_kanji_hint_without_parts(sample_n5, run):
 @pytest.mark.parametrize("category", ["1", "3", "4"])
 @pytest.mark.parametrize("choice, prompt", [
     ("1", "Nghĩa tiếng Việt"),
-    ("2", "Tiếng Nhật (kana / kanji / romaji)"),
+    ("2", "Tiếng Nhật (kana / kanji / romaji"),
 ])
 def test_study_mode_menu_for_vocab_categories(sample_n5, run, category, choice, prompt):
     code, out = run(["-b", "2" if category == "1" else "10"], [category, choice, ":q"])

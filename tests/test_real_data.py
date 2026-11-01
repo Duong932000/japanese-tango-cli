@@ -116,7 +116,8 @@ def test_every_kanji_in_vocab_is_listed(path):
     if not single_path.exists():
         pytest.skip("chưa có kanji.csv")
     listed = {col(r, "kanji") for _, r in rows(single_path)[1]}
-    missing = sorted({ch for _, r in rows(path)[1] for ch in KANJI.findall(col(r, "kanji"))} - listed)
+    used = {ch for _, r in rows(path)[1] for ch in KANJI.findall(col(r, "kanji"))}
+    missing = sorted(used - listed - {"々"})  # 々 là dấu lặp chữ, không phải chữ cần học
     assert not missing, f"thêm các chữ này vào kanji.csv: {' '.join(missing)}"
 
 
